@@ -78,7 +78,6 @@ $(function(){
   	});
 
 
-var top_dis = $('.show_aside').offset().top
 
 
 
