@@ -149,6 +149,37 @@ a {
   text-decoration: none; }
 
 @media (min-width: 0) and (max-width: 890px) {
+  .bread_crumbs {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto; }
+  .bread_crumbs:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 891px) {
+  .bread_crumbs {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    right: 30px;
+    top: 110px; }
+  .bread_crumbs:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .bread_crumbs .link_navigator {
+    color: #555;
+    height: 20px;
+    font-size: 14px;
+    text-align: right;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    cursor: pointer; } }
+
+@media (min-width: 0) and (max-width: 890px) {
   .main_image {
     max-width: 600px;
     margin-left: auto;

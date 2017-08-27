@@ -16,6 +16,29 @@ $breakpoint_pad: 0 890px
 
 $susy: (debug: (image: hide))
 
+.bread_crumbs
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		position: fixed
+		right: 30px
+		top: 110px
+		.link_navigator
+			color: #555
+			height: 20px
+			font-size: 14px
+			text-align: right
+			line-height: 1.4
+			margin-bottom: 10px
+			cursor: pointer
+
+
+
+
+
 .main_image
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container

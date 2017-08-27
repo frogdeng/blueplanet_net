@@ -21,9 +21,7 @@ $(function(){
 
 
 
-	// $('.bxslider_1').bxSlider({
-	//   pagerCustom: '.bx-pager_1'
-	// });
+
 
  //  $(".hamburg").click(function(){
  //     $('.aside').delay(200).toggleClass("hamburg-open");
@@ -48,16 +46,14 @@ $(function(){
 	});
 
 
-	// $('.toggle_btn').click(function(){
-	// 	$('.fat_footer').toggleClass( "fat-footer_show" )
-	// 	return false
-	// });
+
 
 
   $(".hamburg").click(function(){
      $('.aside').delay(200).toggleClass("hamburg-open");
      $(this).delay(200).toggleClass("cross");
     });
+
 
   $(".go_submenu").click(function(){
       $('.m-second_bg').addClass("second-open");
@@ -92,22 +88,13 @@ $(function(){
 
 
 
-	//   $(".show-1").click(function(){
-	//       $('.active-1').addClass("second-open");
-	//     });
-	//   $(".show-2").click(function(){
-	//       $('.active-2').addClass("second-open");
-	//     });
-	//   $(".show-3").click(function(){
-	//       $('.active-3').addClass("second-open");
-	//     });
-	//   $(".show-4").click(function(){
-	//       $('.active-4').addClass("second-open");
-	//     });
-	//   $(".show-5").click(function(){
-	//       $('.active-5').addClass("second-open");
-	//     });
 
+    $('.our_clients_go_a').click(function(){
+        $.scrollTo('.target_1', 300);
+    });    
+    $('.our_clients_go_b').click(function(){
+        $.scrollTo('.target_2', 300);
+    });
 
 
 });
