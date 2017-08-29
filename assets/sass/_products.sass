@@ -21,7 +21,33 @@ $susy: (debug: (image: hide))
 .products
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
+		.section_main
+			// background-color: linear-gradient(to bottom, rgba(0,150,220,1) 0%, rgba(0,150,220,1) 54%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 100%) /* W3C */
+			background: url(../img/pixel.png) #FFF
+			background-repeat: repeat-x
+			padding: 90px 20px
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			.illustration_main
+				margin-bottom: 50px
+				img
+					width: 100%
+			.arrow_down
+				margin-bottom: 50px
 
+			h3
+				font-size: 15px
+				margin-bottom: 10px
+				color: #FFF
+			h2
+				font-size: 30px
+				margin-bottom: 90px
+				color: #FFF
+			p
+				font-size: 25px
+				color: #17317c
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
@@ -39,19 +65,19 @@ $susy: (debug: (image: hide))
 				width: 650px
 				margin-bottom: 50px
 				img
-					width: 100% 
+					width: 100%
 			.arrow_down
-				margin-bottom: 50px	
+				margin-bottom: 50px
 
-			h3 
+			h3
 				font-size: 15px
 				margin-bottom: 10px
 				color: #FFF
-			h2 
+			h2
 				font-size: 30px
 				margin-bottom: 90px
 				color: #FFF
-			p 
+			p
 				font-size: 25px
 				color: #17317c
 
@@ -65,11 +91,44 @@ $susy: (debug: (image: hide))
 .products_contnet
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		margin-top: 90px
+		margin-bottom: 90px
+		.photo
+			+span(6)
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-bottom: 20px
+			img
+				width: 80%
+		.description
+			+span(6)
+			img
+				display: block
+				margin: 0 auto
+				margin-bottom: 30px
+			h6
+				font-size: 20px
+				color: #0067bc
+				margin-bottom: 20px
+				font-weight: 700
+				text-align: center
+
+			p
+				font-size: 16px
+				color: #555
+				line-height: 1.5
+			a
+				display: block
+				font-size: 16px
+				color: #0067bc
+				margin-top: 40px
+				text-align: center
+
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		height: 700px
 		display: flex
 		align-items: center
 		justify-content: center
@@ -80,18 +139,18 @@ $susy: (debug: (image: hide))
 			justify-content: center
 		.description
 			+span(6)
-			img 
+			img
 				margin-bottom: 30px
-			h6 
+			h6
 				font-size: 20px
 				color: #0067bc
 				margin-bottom: 20px
 				font-weight: 700
-			p 	
+			p
 				font-size: 16px
 				color: #555
 				line-height: 1.5
-			a 
+			a
 				display: block
 				font-size: 16px
 				color: #0067bc
