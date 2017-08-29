@@ -21,6 +21,33 @@ $susy: (debug: (image: hide))
 .aboutus
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
+		.section_main
+			background: url(../img/pixel_04.png) #e4f3f5
+			padding-bottom: 90px
+			padding-top: 90px
+			background-repeat: repeat-x
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			.illustration_main
+				margin-bottom: 50px
+				img
+					width: 100%
+			.arrow_down
+				margin-bottom: 50px
+
+			h3
+				font-size: 15px
+				margin-bottom: 10px
+				color: #FFF
+			h2
+				font-size: 30px
+				margin-bottom: 90px
+				color: #FFF
+			p
+				font-size: 25px
+				color: #17317c
 
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
@@ -39,27 +66,35 @@ $susy: (debug: (image: hide))
 				width: 650px
 				margin-bottom: 50px
 				img
-					width: 100% 
+					width: 100%
 			.arrow_down
-				margin-bottom: 50px	
+				margin-bottom: 50px
 
-			h3 
+			h3
 				font-size: 15px
 				margin-bottom: 10px
 				color: #FFF
-			h2 
+			h2
 				font-size: 30px
 				margin-bottom: 90px
 				color: #FFF
-			p 
+			p
 				font-size: 25px
 				color: #17317c
-			
-			
+
+
 
 .who_are_we
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		width: 50%
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		text-align: center
+		color: #b7b7b7
+		margin-bottom: 120px
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
@@ -83,12 +118,25 @@ $susy: (debug: (image: hide))
 .aboutus_article
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		padding: 0 40px
 
+		.p-text
+			text-align: center
+			font-size: 25px
+			color: #17317c
+			margin-bottom: 50px
+		.article_contain
+			+span(6)
+			p
+				font-size: 16px
+				color: #555
+				line-height: 1.5
+				margin-bottom: 20px
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		padding: 0 40px
-	
+
 		.p-text
 			text-align: center
 			font-size: 25px
@@ -97,7 +145,7 @@ $susy: (debug: (image: hide))
 		.article_contain
 			+span(8)
 			+pre(2)
-			p 
+			p
 				font-size: 16px
 				color: #555
 				line-height: 1.5
@@ -108,7 +156,36 @@ $susy: (debug: (image: hide))
 .circle
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-
+		display: flex
+		align-items: center
+		justify-content: center
+		text-align: center
+		.circle_c
+			background: url('../img/circle.png') center
+			background-repeat: no-repeat
+			background-size: 100%
+			margin-top: 100px
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			text-align: center
+			padding: 50px 0px
+			h6
+				display: block
+				width: 300px
+				font-size: 30px
+				color: #69c5b2
+				font-weight: 700
+				line-height: 1.2
+				margin-bottom: 20px
+			p
+				display: block
+				width: 300px
+				font-size: 16px
+				color: #222
+				line-height: 1.5
+				margin-bottom: 20px
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -120,7 +197,6 @@ $susy: (debug: (image: hide))
 			height: 500px
 			background: url('../img/circle.png') center
 			background-repeat: no-repeat
-			height: 500px
 			margin-top: 100px
 			display: flex
 			flex-direction: column
@@ -130,7 +206,7 @@ $susy: (debug: (image: hide))
 			padding: 100px
 			h6
 				display: block
-				width: 300px  
+				width: 300px
 				font-size: 30px
 				color: #69c5b2
 				font-weight: 700
@@ -138,7 +214,7 @@ $susy: (debug: (image: hide))
 				margin-bottom: 20px
 			p
 				display: block
-				width: 300px 	
+				width: 300px
 				font-size: 16px
 				color: #222
 				line-height: 1.5
@@ -153,7 +229,26 @@ $susy: (debug: (image: hide))
 .our_team
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		p
+			font-size: 16px
+			color: #222
+			line-height: 1.5
+			margin-bottom: 20px
+		.our_team_article
+			width: 80%
+			text-align: center
+			color: #222
+			line-height: 1.5
+			margin-bottom: 50px
+		.our_team_cool
+			width: 100%
+			padding: 0 20px
+			img
+				width: 100%
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -161,7 +256,7 @@ $susy: (debug: (image: hide))
 		flex-direction: column
 		align-items: center
 		justify-content: center
-		p 	
+		p
 			font-size: 16px
 			color: #222
 			line-height: 1.5
@@ -181,11 +276,24 @@ $susy: (debug: (image: hide))
 
 .anyquestion-wrapper
 	padding: 90px 0
-	background: linear-gradient(to right, rgba(76,173,186,1) 0%, rgba(85,128,207,1) 100%)	
+	background: linear-gradient(to right, rgba(76,173,186,1) 0%, rgba(85,128,207,1) 100%)
 
 .anyquestion
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		h4
+			font-size: 31px
+			color: #FFF
+		h5
+			font-size: 20px
+			color: #FFF
+		img
+			margin-top: 20px
+
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
@@ -200,9 +308,9 @@ $susy: (debug: (image: hide))
 		h5
 			font-size: 20px
 			color: #FFF
-		img 
+		img
 			margin-top: 20px
- 
+
 
 
 

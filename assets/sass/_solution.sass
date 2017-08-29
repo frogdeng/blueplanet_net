@@ -21,7 +21,32 @@ $susy: (debug: (image: hide))
 .solution
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
+		.section_main
+			background: url(../img/pixel_03.png) #e4f3f5
+			background-repeat: repeat-x
+			padding: 90px 20px
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			.illustration_main
+				margin-bottom: 50px
+				img
+					width: 100%
+			.arrow_down
+				margin-bottom: 50px
 
+			h3
+				font-size: 15px
+				margin-bottom: 10px
+				color: #FFF
+			h2
+				font-size: 30px
+				margin-bottom: 90px
+				color: #FFF
+			p
+				font-size: 25px
+				color: #17317c
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
@@ -36,7 +61,6 @@ $susy: (debug: (image: hide))
 			align-items: center
 			justify-content: center
 			.illustration_main
-				width: 650px
 				margin-bottom: 50px
 				img
 					width: 100%
@@ -67,7 +91,49 @@ $susy: (debug: (image: hide))
 .solution_content
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		.m-title
+			font-size: 30px
+			color: #17317c
+			text-align: center
+			margin-bottom: 50px
+			margin-top: 100px
+		.solution_case_a
+			+span(6)
+			margin-top: 150px
+			margin-bottom: 150px
 
+			.photo_slide
+				+span(6)
+				display: flex
+				flex-direction: row
+				align-items: center
+				justify-content: center
+				margin-bottom: 20px
+			.description
+				+span(6)
+				padding: 0 20px
+				h4
+					font-size: 30px
+					color: #0067bc
+					font-weight: 300
+					line-height: 1.5
+					margin-bottom: 5px
+				h5
+					font-size: 18px
+					color: #0067bc
+					font-weight: 700
+					line-height: 1.5
+					margin-bottom: 5px
+				p
+					font-size: 16px
+					color: #555
+					line-height: 1.5
+					margin-bottom: 20px
+		.l-line
+			width: 100%
+			height: 2px
+			background: #eee
+			clear: both
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
