@@ -22,7 +22,6 @@ $(function(){
 
 
 
-
  //  $(".hamburg").click(function(){
  //     $('.aside').delay(200).toggleClass("hamburg-open");
  //     $(this).delay(200).toggleClass("active");
@@ -40,8 +39,6 @@ $(function(){
 		// 	$(this).addClass("open");
 		// 	$(this).parent().find('.display_1').slideDown(300);
 		// }
-
-
 
 	});
 
@@ -97,8 +94,30 @@ $(function(){
     });
 
 
+    $(".btn_service").click(function(){
+      $(this).addClass("active");
+      $('.btn_product').removeClass("active");
+
+      $('.contnat_a').addClass("div_hidden");
+      $('.contnat_b').removeClass("div_hidden");
+      });
+
+    $(".btn_product").click(function(){
+      $(this).addClass("active");
+      $('.btn_service').removeClass("active");
+
+      $('.contnat_b').addClass("div_hidden");
+      $('.contnat_a').removeClass("div_hidden");
+      });
+
+
+
+
+
 });
 
+
+   
 
 
 
