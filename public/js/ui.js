@@ -72,8 +72,6 @@ $(function(){
 
 
 
-
-
   $(".show_aside").click(function(){
       $('.classification_screening').toggleClass("show_aisde_postsearch");
        $('.classification_screening').css('top', 'top_dis + 200' )
@@ -86,9 +84,11 @@ $(function(){
 
 
 
+
+// working
     $('.our_clients_go_a').click(function(){
         $.scrollTo('.target_1', 300);
-    });    
+    });
     $('.our_clients_go_b').click(function(){
         $.scrollTo('.target_2', 300);
     });
@@ -117,7 +117,7 @@ $(function(){
 });
 
 
-   
+
 
 
 

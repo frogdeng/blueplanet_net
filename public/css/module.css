@@ -849,8 +849,8 @@ a {
     float: left;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -860,7 +860,7 @@ a {
     -ms-flex-pack: center;
     justify-content: center; }
   .our_clients_content .product_case_a .photo_slide {
-    width: 95%;
+    width: 86.66667%;
     float: left;
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -1896,21 +1896,20 @@ a {
     -ms-flex-align: start;
     align-items: flex-start;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    position: relative; }
   header:after {
     content: " ";
     display: block;
     clear: both; }
   header .logo {
-    width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    font-size: 26px;
-    color: #222; }
+    margin-left: 25px; }
   header .logo img {
     width: 100%;
     display: block; }
@@ -1933,7 +1932,7 @@ a {
     padding-top: 50px;
     transition: all .2s ease;
     right: -100%;
-    top: -30px;
+    top: 0px;
     z-index: 1200;
     overflow-x: hidden; }
   header .aside ul li .m-first {
@@ -2114,7 +2113,7 @@ a {
   width: 80%;
   margin: 0 auto;
   height: 4px;
-  background: #FFF;
+  background: #607d8b;
   margin-bottom: 5px;
   margin-top: 5px;
   transition: all .5s ease;
@@ -2125,7 +2124,7 @@ a {
   width: 80%;
   margin: 0 auto;
   height: 5px;
-  background: #eee;
+  background: #FFF;
   margin-bottom: 6px;
   margin-top: 6px;
   transition: all .3s ease;
@@ -2136,7 +2135,7 @@ a {
   width: 80%;
   margin: 0 auto;
   height: 5px;
-  background: #eee;
+  background: #FFF;
   margin-bottom: 6px;
   margin-top: 6px;
   transform: rotate(0deg) translate3d(0px, 0px, 0px);
@@ -2147,7 +2146,7 @@ a {
   width: 80%;
   margin: 0 auto;
   height: 5px;
-  background: #eee;
+  background: #FFF;
   margin-bottom: 6px;
   margin-top: 6px;
   transition: all .3s ease;
@@ -2353,3 +2352,6 @@ a {
     margin-right: 1.25%;
     font-size: 14px;
     color: #999; } }
+
+.slick-prev:before, .slick-next:before {
+  color: #222; }
