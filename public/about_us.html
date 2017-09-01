@@ -29,7 +29,7 @@
 
 		 $(".iziModal").iziModal({
 		 	  title: '',
-			  width: 700,
+			  width: 1200,
 			  radius: 5,
 			  padding: 20,
 			});
@@ -159,9 +159,33 @@
 
 <div class="anyquestion-wrapper">
 	<div class="anyquestion">
-		<h4>您有任何問題或需求？</h4>
-		<h5>我們歡迎您來詢問！</h5>
-		<img src="img/icon_a.png" alt="">
+		<div class="anyquestion_q">
+			<h4>您有任何問題或需求？</h4>
+			<h5>我們歡迎您來詢問！</h5>
+			<img src="img/icon_a.png" alt="">
+		</div>
+		<div class="questionnaire">
+			<div class="questionnaire_list">
+				<div class="q-t">姓名</div>
+				<input type="text">
+			</div>
+			<div class="questionnaire_list">
+				<div class="q-t">E-Mail</div>
+				<input type="text">
+			</div>
+			<div class="questionnaire_list">
+				<div class="q-t">手機</div>
+				<input type="text">
+			</div>
+			<div class="questionnaire_list">
+				<div class="q-t">您的問題</div>
+				<textarea name="" id="" cols="30" rows="10"></textarea>
+			</div>
+
+			<a href="#" class="summit">送出</a>
+		</div>
+
+
 	</div>
 
 </div>
