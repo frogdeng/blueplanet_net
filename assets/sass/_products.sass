@@ -84,9 +84,17 @@ $susy: (debug: (image: hide))
 
 
 .products-wrapper
-	background: #FFF
-	padding-bottom: 100px
-	padding-top: 100px
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		background: #FFF
+		padding-bottom: 100px
+		padding-top: 0px
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		background: #FFF
+		padding-bottom: 100px
+		padding-top: 100px
 
 .products_contnet
 	+susy-breakpoint($breakpoint_pad, $pad)
@@ -111,6 +119,7 @@ $susy: (debug: (image: hide))
 			+span(6)
 			img
 				display: block
+				width: 50%
 				margin: 0 auto
 				margin-bottom: 30px
 			h6
@@ -138,6 +147,7 @@ $susy: (debug: (image: hide))
 		+container
 		margin-top: 140px
 		margin-bottom: 140px
+		padding: 0 20px
 		display: flex
 		flex-direction: row
 		align-items: center

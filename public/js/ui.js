@@ -93,6 +93,21 @@ $(function(){
         $.scrollTo('.target_2', 300);
     });
 
+    
+   $('.expertise_a').click(function(){
+        $.scrollTo('.target_go_1', 300);
+    });
+    $('.expertise_b').click(function(){
+        $.scrollTo('.target_go_2', 300);
+    });
+   $('.expertise_c').click(function(){
+        $.scrollTo('.target_go_3', 300);
+    });
+
+
+
+
+
 
     $(".btn_service").click(function(){
       $(this).addClass("active");

@@ -31,7 +31,9 @@
 		 	  title: '',
 			  width: 1200,
 			  radius: 5,
-			  padding: 20,
+			  closeOnEscape: true,
+              closeButton: true,
+			  padding: 20
 			});
 	})
 </script>
@@ -82,13 +84,11 @@
 
 
 
-<div class="bread_crumbs">
-	<div class="link_navigator expertise_a">輿情監測類 </div>
-	<div class="link_navigator expertise_b">開放資料類</div>
-	<div class="link_navigator expertise_c">數位典藏類</div>
-	<div class="link_navigator expertise_d">學術教育類</div>
-	<div class="link_navigator expertise_e">其他</div>
-</div>
+<!-- <div class="bread_crumbs">
+	<div class="link_navigator expertise_a">透事THOUGHTSs </div>
+	<div class="link_navigator expertise_b">中文檢索引擎</div>
+	<div class="link_navigator expertise_c">數位⼈文架構</div>
+</div> -->
 
 <div class="expertises">
 	<div class="section_main">
@@ -109,7 +109,7 @@
 <div class="w-wrapper">
 
 <!-- 透事THOUGHTS -->
-	<div class="thoughts">
+	<div class="thoughts target_go_1">
 		<section>
 			<div class="thoughts_col">
 				<h6>透事THOUGHTS</h6>
@@ -124,14 +124,63 @@
 		</section>
 
 		<div class="arrow_down"><img src="img/arrow_down.png" alt=""></div>
-		<button class="trigger" data-iziModal-open="#modal-one">Open lightbox</button>
+		<button class="trigger" data-iziModal-open="#modal-a">Open lightbox</button>
 	</div>
 
 
 
 
+
+
+<!-- 中文檢索引擎 -->
+	<div class="thoughts target_go_2">
+		<section>
+			<div class="thoughts_col">
+				<h6>中文檢索引擎</h6>
+			</div>
+			<div class="thoughts_col">
+				<img src="img/expertise_03.png" alt="">
+			</div>
+			<div class="thoughts_col">
+				<h5>精準，更求完整</h5>
+				<p>針對中文字博大精深及變化，藍星球資訊發展完整支援容錯／簡繁體／異體字的檢索引擎。</p>
+	 		</div>
+		</section>
+
+		<div class="arrow_down"><img src="img/arrow_down.png" alt=""></div>
+
+		<button class="trigger" data-iziModal-open="#modal-b">Open lightbox</button>
+	</div>
+
+
+
+<!-- 數位⼈文架構 -->
+	<div class="thoughts target_go_3">
+		<section>
+			<div class="thoughts_col">
+				<h6>數位⼈文架構</h6>
+			</div>
+			<div class="thoughts_col">
+				<img src="img/expertise_04.png" alt="">
+			</div>
+			<div class="thoughts_col">
+				<p>提供符合數位人文資料庫之架構及詮釋資料與全文資料的自動化處理。無論原始資料格式為結構化、半結構化、非結構化之型態，皆可透過藍星球資訊的「自動化資料豐富程序」將資料對應都柏林核心集 (Dublin-Core) 格式，並去除無效、重覆或空白之噪音，將資料正規化處理。並擷取出資料中重要之特徵資訊 (如人、事、時、地、物)，並直接轉換成一套能支援簡繁體中文檢索、具備人、事、時、地、物檢索後分類、具備時間軸檢視、具備空間軸檢視等功能。</p>
+
+	 		</div>
+		</section>
+		<button class="trigger" data-iziModal-open="#modal-c">Open lightbox</button>
+	</div>
+
+</div>
+
+
+
+
+
 <!-- iziModal -->
-<div id="modal-one" class="iziModal" data-izimodal-title="透事THOUGHTS" >
+<!-- modal-a -->
+<div id="modal-a" class="iziModal"  >
+ <button data-iziModal-close class="icon-close">x</button>
 		<div class="lightbox_a">
 			<div class="detail_item">
 				<img src="img/good_icon_01.png" alt="">
@@ -166,51 +215,82 @@
 		</div>
 </div>
 
-
-
-
-<!-- 中文檢索引擎 -->
-	<div class="thoughts">
-		<section>
-			<div class="thoughts_col">
-				<h6>中文檢索引擎</h6>
+<!-- modal-b -->
+<div id="modal-b" class="iziModal"  >
+ <button data-iziModal-close class="icon-close">x</button>
+		<div class="lightbox_a">
+			<div class="detail_item">
+				<img src="img/good_icon_01.png" alt="">
+				<h6>bbb</h6>
+				<p>本技術以機器學習為基底，大量學習文章用語樣式（pattern），自動化萃取文本中的人物、時間、團體、品牌、關鍵字詞彙，使分析結果具準確優勢。無論何種時間標記方式，皆可進行正規化轉換，利於大量資料整合； 地點串接經緯度資料， 方便應用於地圖標記。</p>
 			</div>
-			<div class="thoughts_col">
-				<img src="img/expertise_03.png" alt="">
+			<div class="detail_item">
+				<img src="img/good_icon_01.png" alt="">
+				<h6>詞彙萃取</h6>
+				<p>本技術以機器學習為基底，大量學習文章用語樣式（pattern），自動化萃取文本中的人物、時間、團體、品牌、關鍵字詞彙，使分析結果具準確優勢。無論何種時間標記方式，皆可進行正規化轉換，利於大量資料整合； 地點串接經緯度資料， 方便應用於地圖標記。</p>
 			</div>
-			<div class="thoughts_col">
-				<h5>精準，更求完整</h5>
-				<p>針對中文字博大精深及變化，藍星球資訊發展完整支援容錯／簡繁體／異體字的檢索引擎。</p>
-	 		</div>
-		</section>
-
-		<div class="arrow_down"><img src="img/arrow_down.png" alt=""></div>
-	</div>
-
-
-
-<!-- 數位⼈文架構 -->
-	<div class="thoughts">
-		<section>
-			<div class="thoughts_col">
-				<h6>數位⼈文架構</h6>
+			<div class="detail_item">
+				<img src="img/good_icon_01.png" alt="">
+				<h6>詞彙萃取</h6>
+				<p>本技術以機器學習為基底，大量學習文章用語樣式（pattern），自動化萃取文本中的人物、時間、團體、品牌、關鍵字詞彙，使分析結果具準確優勢。無論何種時間標記方式，皆可進行正規化轉換，利於大量資料整合； 地點串接經緯度資料， 方便應用於地圖標記。</p>
 			</div>
-			<div class="thoughts_col">
-				<img src="img/expertise_04.png" alt="">
+			<div class="detail_item">
+				<img src="img/good_icon_01.png" alt="">
+				<h6>詞彙萃取</h6>
+				<p>本技術以機器學習為基底，大量學習文章用語樣式（pattern），自動化萃取文本中的人物、時間、團體、品牌、關鍵字詞彙，使分析結果具準確優勢。無論何種時間標記方式，皆可進行正規化轉換，利於大量資料整合； 地點串接經緯度資料， 方便應用於地圖標記。</p>
 			</div>
-			<div class="thoughts_col">
-				<p>提供符合數位人文資料庫之架構及詮釋資料與全文資料的自動化處理。無論原始資料格式為結構化、半結構化、非結構化之型態，皆可透過藍星球資訊的「自動化資料豐富程序」將資料對應都柏林核心集 (Dublin-Core) 格式，並去除無效、重覆或空白之噪音，將資料正規化處理。並擷取出資料中重要之特徵資訊 (如人、事、時、地、物)，並直接轉換成一套能支援簡繁體中文檢索、具備人、事、時、地、物檢索後分類、具備時間軸檢視、具備空間軸檢視等功能。</p>
-
-	 		</div>
-		</section>
-
-	</div>
-
+			<div class="detail_item">
+				<img src="img/good_icon_01.png" alt="">
+				<h6>詞彙萃取</h6>
+				<p>本技術以機器學習為基底，大量學習文章用語樣式（pattern），自動化萃取文本中的人物、時間、團體、品牌、關鍵字詞彙，使分析結果具準確優勢。無論何種時間標記方式，皆可進行正規化轉換，利於大量資料整合； 地點串接經緯度資料， 方便應用於地圖標記。</p>
+			</div>
+			<div class="detail_item">
+				<img src="img/good_icon_01.png" alt="">
+				<h6>詞彙萃取</h6>
+				<p>本技術以機器學習為基底，大量學習文章用語樣式（pattern），自動化萃取文本中的人物、時間、團體、品牌、關鍵字詞彙，使分析結果具準確優勢。無論何種時間標記方式，皆可進行正規化轉換，利於大量資料整合； 地點串接經緯度資料， 方便應用於地圖標記。</p>
+			</div>
+		</div>
 </div>
 
 
 
+<!-- modal-c -->
+<div id="modal-c" class="iziModal"  >
+ <button data-iziModal-close class="icon-close">x</button>
 
+		<div class="lightbox_a">
+			<div class="detail_item">
+				<img src="img/good_icon_01.png" alt="">
+				<h6>cccc</h6>
+				<p>本技術以機器學習為基底，大量學習文章用語樣式（pattern），自動化萃取文本中的人物、時間、團體、品牌、關鍵字詞彙，使分析結果具準確優勢。無論何種時間標記方式，皆可進行正規化轉換，利於大量資料整合； 地點串接經緯度資料， 方便應用於地圖標記。</p>
+			</div>
+			<div class="detail_item">
+				<img src="img/good_icon_01.png" alt="">
+				<h6>詞彙萃取</h6>
+				<p>本技術以機器學習為基底，大量學習文章用語樣式（pattern），自動化萃取文本中的人物、時間、團體、品牌、關鍵字詞彙，使分析結果具準確優勢。無論何種時間標記方式，皆可進行正規化轉換，利於大量資料整合； 地點串接經緯度資料， 方便應用於地圖標記。</p>
+			</div>
+			<div class="detail_item">
+				<img src="img/good_icon_01.png" alt="">
+				<h6>詞彙萃取</h6>
+				<p>本技術以機器學習為基底，大量學習文章用語樣式（pattern），自動化萃取文本中的人物、時間、團體、品牌、關鍵字詞彙，使分析結果具準確優勢。無論何種時間標記方式，皆可進行正規化轉換，利於大量資料整合； 地點串接經緯度資料， 方便應用於地圖標記。</p>
+			</div>
+			<div class="detail_item">
+				<img src="img/good_icon_01.png" alt="">
+				<h6>詞彙萃取</h6>
+				<p>本技術以機器學習為基底，大量學習文章用語樣式（pattern），自動化萃取文本中的人物、時間、團體、品牌、關鍵字詞彙，使分析結果具準確優勢。無論何種時間標記方式，皆可進行正規化轉換，利於大量資料整合； 地點串接經緯度資料， 方便應用於地圖標記。</p>
+			</div>
+			<div class="detail_item">
+				<img src="img/good_icon_01.png" alt="">
+				<h6>詞彙萃取</h6>
+				<p>本技術以機器學習為基底，大量學習文章用語樣式（pattern），自動化萃取文本中的人物、時間、團體、品牌、關鍵字詞彙，使分析結果具準確優勢。無論何種時間標記方式，皆可進行正規化轉換，利於大量資料整合； 地點串接經緯度資料， 方便應用於地圖標記。</p>
+			</div>
+			<div class="detail_item">
+				<img src="img/good_icon_01.png" alt="">
+				<h6>詞彙萃取</h6>
+				<p>本技術以機器學習為基底，大量學習文章用語樣式（pattern），自動化萃取文本中的人物、時間、團體、品牌、關鍵字詞彙，使分析結果具準確優勢。無論何種時間標記方式，皆可進行正規化轉換，利於大量資料整合； 地點串接經緯度資料， 方便應用於地圖標記。</p>
+			</div>
+		</div>
+</div>
 
 
 
