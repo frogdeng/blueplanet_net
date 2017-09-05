@@ -22,7 +22,6 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 		.section_main
-			// background-color: linear-gradient(to bottom, rgba(0,150,220,1) 0%, rgba(0,150,220,1) 54%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 100%) /* W3C */
 			background: url(../img/pixel.png) #FFF
 			background-repeat: repeat-x
 			padding: 90px 20px
@@ -52,7 +51,6 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		.section_main
-			// background-color: linear-gradient(to bottom, rgba(0,150,220,1) 0%, rgba(0,150,220,1) 54%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 100%) /* W3C */
 			background: url(../img/pixel.png) #FFF
 			padding-bottom: 90px
 			padding-top: 90px
@@ -96,17 +94,18 @@ $susy: (debug: (image: hide))
 		padding-bottom: 100px
 		padding-top: 100px
 
+
+
 .products_contnet
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-		margin-top: 90px
-		margin-bottom: 90px
+		margin-top: 60px
+		margin-bottom: 60px
 		padding: 0 20px
 		display: flex
 		flex-direction: column
 		align-items: center
 		justify-content: center
-		.photo
 		.photo
 			+span(6)
 			display: flex
@@ -115,6 +114,11 @@ $susy: (debug: (image: hide))
 			margin-bottom: 20px
 			img
 				width: 80%
+			.choose
+				
+				img
+					width: 100%
+					border: 1px solid #eee
 		.description
 			+span(6)
 			img
@@ -140,14 +144,19 @@ $susy: (debug: (image: hide))
 				margin-top: 40px
 				text-align: center
 				margin-bottom: 40px
+		.l-line
+			width: 100%
+			height: 2px
+			background: #eee
+			clear: both
 
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		margin-top: 140px
-		margin-bottom: 140px
-		padding: 0 20px
+		margin-top: 100px
+		margin-bottom: 100px
+		padding: 50px 20px
 		display: flex
 		flex-direction: row
 		align-items: center
@@ -157,6 +166,15 @@ $susy: (debug: (image: hide))
 			display: flex
 			align-items: center
 			justify-content: center
+			position: relative
+			.choose
+				position: absolute
+				width: 146%
+				right: -44%
+				top: -310px
+				transform: rotate(-12deg)
+				img 
+					border: 1px solid #eee
 		.description
 			+span(6)
 			img
@@ -175,6 +193,12 @@ $susy: (debug: (image: hide))
 				font-size: 16px
 				color: #0067bc
 				margin-top: 40px
+		.l-line
+			width: 100%
+			height: 2px
+			background: #eee
+			clear: both
+
 
 
 

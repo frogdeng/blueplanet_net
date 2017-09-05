@@ -84,7 +84,7 @@ $susy: (debug: (image: hide))
 
 
 .our_clients_wrapper
-	padding: 120px 0
+	padding: 100px 0
 
 .our_clients_content
 	+susy-breakpoint($breakpoint_pad, $pad)
@@ -158,11 +158,22 @@ $susy: (debug: (image: hide))
 					font-size: 16px
 					color: #555
 					line-height: 1.5
-		.l-line
-			width: 100%
-			height: 2px
-			background: #eee
-			clear: both
+
+
+
+.l-line
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		width: 100%
+		height: 2px
+		background: #eee
+		clear: both
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		width: 100%
+		height: 2px
+		background: #eee
+		clear: both
 
 
 
