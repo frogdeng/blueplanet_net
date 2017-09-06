@@ -16,16 +16,11 @@ $breakpoint_pad: 0 890px
 
 $susy: (debug: (image: hide))
 
-
-
-
-
 .expertises
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 		.section_main
 			padding: 0 20px
-			// background-color: linear-gradient(to bottom, rgba(0,150,220,1) 0%, rgba(0,150,220,1) 54%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 100%) /* W3C */
 			background: url(../img/pixel.png) #e4f3f5
 			padding-bottom: 90px
 			padding-top: 90px
@@ -56,7 +51,6 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		.section_main
-			// background-color: linear-gradient(to bottom, rgba(0,150,220,1) 0%, rgba(0,150,220,1) 54%, rgba(255,255,255,1) 54%, rgba(255,255,255,1) 100%) /* W3C */
 			background: url(../img/pixel.png) #e4f3f5
 			padding-bottom: 90px
 			padding-top: 90px
@@ -106,6 +100,36 @@ $susy: (debug: (image: hide))
 			align-items: center
 			justify-content: center
 			margin-bottom: 60px
+			.thoughts_motion
+				+span(6)
+				height: 420px
+				display: flex
+				flex-diection: row
+				align-items: center
+				justify-content: center
+				position: relative
+				.dot_circle
+					position: absolute
+				.funnel
+					position: absolute
+					top: 180px
+				.data_1
+					position: absolute
+					opacity: 0
+
+				.data_2
+					position: absolute
+					opacity: 0
+				.file
+					position: absolute
+					bottom: 50px
+					opacity: 0
+					cursor: pointer
+					transform: scale(.3)
+					a 
+						display: block
+			
+
 			.thoughts_col
 				+span(6)
 				margin-bottom: 30px
@@ -136,23 +160,29 @@ $susy: (debug: (image: hide))
 		flex-direction: column
 		align-items: center
 		justify-content: center
-		height: 100vh
+		height: 900px
 		section
+			width: 100%
 			display: flex
 			flex-direction: row
 			align-items: center
 			justify-content: center
 			margin-bottom: 60px
-			.thoughts_motion
-				+span(4.5)
-				height: 420px
+			.thoughts_motion_1
+				+span(6)
+				height: 450px
 				display: flex
-				flex-direction: row
+				flex-direction: column
 				align-items: center
 				justify-content: center
 				position: relative
+				// background: #817
 				.dot_circle
 					position: absolute
+					display: flex
+					flex-direction: column
+					align-items: center
+					justify-content: center
 				.funnel
 					position: absolute
 					top: 180px
@@ -171,8 +201,62 @@ $susy: (debug: (image: hide))
 					a 
 						display: block
 			
+			.thoughts_motion_2
+				+span(6)
+				height: 450px
+				display: flex
+				flex-direction: row
+				align-items: center
+				justify-content: center
+				position: relative
+				.dot_circle
+					position: absolute
+					display: flex
+					flex-direction: column
+					align-items: center
+					justify-content: center
+				.data_windows
+					display: flex
+					flex-direction: row
+					align-items: center
+					justify-content: center
+					.w1,.w2, .w3, .w4, .w5, .w6
+						position: absolute
+						// display: none
+				.magnifier
+					position: absolute
+					bottom: 60px
+					cursor: pointer
+					// left: 300px 
 
-
+			.thoughts_motion_3
+				+span(6)
+				height: 450px
+				display: flex
+				flex-direction: row
+				align-items: center
+				justify-content: center
+				position: relative
+				.dot_circle
+					position: absolute
+					display: flex
+					flex-direction: column
+					align-items: center
+					justify-content: center
+				.flash_windows
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					margin-top: 200px
+					cursor: pointer
+					.f1,.f2, .f3
+						position: absolute
+						// display: none
+				.godown
+					position: absolute
+					top: 50px
+			
 
 
 			.thoughts_col
@@ -202,35 +286,28 @@ $susy: (debug: (image: hide))
 .motion_dot
 	animation: dot_circle 2s 1
 
-.motion_funnel
-	animation: funnel 3s 1
-
-.motion_data_1
-	animation: data_1 3s infinite
-	animation-delay: 1.5s
-
-.motion_data_2
-	animation: data_2 3s infinite
-	animation-delay: 3.5s
-
-.motion_file
-	animation: file 5s infinite
-	animation-delay: 3s
-	
-
 @keyframes dot_circle
 	from 
-		width: 1px
+		width: 50%
 		opacity: 0
+
 	to 
 		width: 100%
 		opacity: 1
+
+.motion_funnel
+	animation: funnel 3s 1
 
 @keyframes funnel
 	from 
 		opacity: 0
 	to 
 		opacity: 1
+
+
+.motion_data_1
+	animation: data_1 3s infinite
+	animation-delay: 1.5s
 
 @keyframes data_1
 	from 
@@ -241,6 +318,11 @@ $susy: (debug: (image: hide))
 		opacity: 0
 		transform: scale(.4)
 
+
+.motion_data_2
+	animation: data_2 3s infinite
+	animation-delay: 3.5s
+
 @keyframes data_2
 	from 
 		top: 0px
@@ -250,19 +332,143 @@ $susy: (debug: (image: hide))
 		opacity: 0
 		transform: scale(.3)
 
+.motion_file
+	animation: file 5s infinite
+	animation-delay: 3s
+
 @keyframes file
 	0%
-		bottom: 55px
+		bottom: 85px
 		opacity: 0
 		transform: scale(.3)
-	70%
-		bottom: 30px
+	30%
+		bottom: 50px
 		opacity: 1
 		transform: scale(1)
 
 	100%
-		bottom: 10px
+		bottom: 30px
 		opacity: 0
+		transform: scale(1)
+
+// ======
+.motion_w1
+	animation: motion_w1 1.4s infinite
+@keyframes motion_w1
+	0%
+		opacity: 0
+	10%
+		opacity: 1
+	20%
+		opacity: 0
+
+
+.motion_w1
+	animation: motion_w2 1.4s infinite
+@keyframes motion_w2
+	20%
+		opacity: 0
+	40%
+		opacity: 1
+	60%
+		opacity: 0
+		
+.motion_w3
+	animation: motion_w3 1.4s infinite
+@keyframes motion_w3
+	40%
+		opacity: 0
+	60%
+		opacity: 1
+	80%
+		opacity: 0
+
+.motion_w4
+	animation: motion_w4 1.4s infinite
+@keyframes motion_w4
+	60%
+		opacity: 0
+	80%
+		opacity: 1
+
+.motion_w5
+	animation: motion_w5 1.4s infinite
+@keyframes motion_w5
+	80%
+		opacity: 0
+	100%
+		opacity: 1
+
+
+.motion_magnifier
+	animation: magnifier 5s infinite
+@keyframes magnifier
+	0%
+		left: 300px
+		bottom: 100px
+	50% 
+		left: 220px
+		bottom: 30px	
+	100% 
+		left: 300px
+		bottom: 100px
+
+
+// ======
+
+.motion_f1
+	animation: f1 2s infinite
+@keyframes f1
+	0%
+		opacity: 1
+	33%
+		opacity: 0
+	66% 
+		opacity: 0
+
+	100% 
+		opacity: 0
+
+.motion_f2
+	animation: f2 2s infinite
+@keyframes f2
+	0%
+		opacity: 0
+	33%
+		opacity: 1
+	66% 
+		opacity: 0
+	100% 
+		opacity: 0
+
+.motion_f3
+	animation: f3 2s infinite
+@keyframes f3
+	0%
+		opacity: 0
+	33%
+		opacity: 0
+	66% 
+		opacity: 1
+
+	100% 
+		opacity: 1
+
+
+.motion_godown
+	animation: godown 3s infinite
+@keyframes godown
+	0%
+		top: 50px
+		opacity: 1
+	30% 
+		top: 90px
+		opacity: 1
+		transform: scale(.7)
+	100%
+		top: 180px
+		opacity: 0
+		transform: scale(.3)
 
 
 
