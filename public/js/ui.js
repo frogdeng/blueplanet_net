@@ -67,8 +67,38 @@ $(function(){
 
 
 
-      var thoughts_motion_1_h = $('.thoughts_motion_1').offset().top
-      console.log(thoughts_motion_1_h)
+    
+      
+
+  $(window).scroll(function (event) {
+      var target_go_1_h = $('.target_go_1').offset().top;
+      var target_go_2_h = $('.target_go_2').offset().top;
+      var target_go_3_h = $('.target_go_2').offset().top;
+      var sc_1 = $(window).scrollTop() + 200;
+
+      // console.log(target_go_1_h);
+      // console.log(sc);
+      if(sc_1 > target_go_1_h){
+        $(".dot_circle").addClass('motion_dot')
+        $(".funnel").addClass('motion_funnel')
+        $(".data_1").addClass('motion_data_1')
+        $(".data_2").addClass('motion_data_2')
+        $(".file").addClass('motion_file')
+      }
+
+
+
+
+
+
+
+  });
+
+
+
+
+
+
 
 
 });
