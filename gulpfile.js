@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     fs = require('fs'),
     glob = require('glob'),
-    
+
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     plumber = require('gulp-plumber'),
@@ -11,7 +11,7 @@ var gulp = require('gulp'),
     foreach = require('gulp-foreach'),
 
     data = require('gulp-data'),
-    path = require('path'), 
+    path = require('path'),
     bourbon = require("node-bourbon").includePaths;
 
 
@@ -26,7 +26,7 @@ gulp.task('sass', function () {
             includePaths: [bourbon, 'node_modules/susy/sass']
           }))
         .pipe(autoprefixer({
-                browsers: ['last 2 versions'],
+                browsers: ['last 2 versions','safari 6'],
                 cascade: false
             }))
         .pipe(sass({errLogToConsole: true}))
