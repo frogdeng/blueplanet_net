@@ -42,20 +42,109 @@ $susy: (debug: (image: hide))
 .main_image
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-		.cool_earth
-			height: 200px
-			background: url('../img/mianimage.png') center
-			background-size: 100%
-			background-repeat: no-repeat
+		padding: 0 20px
+		padding-top: 50px
+	
+		h2 
+			font-size: 32px
+			text-align: center
+			margin-bottom: 10px
+			color: #17317c
+		p 
+			font-size: 16px
+			text-align: center
+			color: #888
+			line-height: 1.4
+		.w_main
+			position: relative
+			height: 300px
+			overflow: hidden
+			.dotline
+				position: absolute
+				width: 100%
+				height: 350px
+				background: url('../img/dotline.png') bottom
+				background-size: 100%
+				background-repeat: no-repeat
+
+
+			.cool_earth
+				position: absolute
+				width: 100%
+				height: 360px
+				background: url('../img/earth.png') center
+				background-size: cover
+				background-repeat: no-repeat
+				top: 30%
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		.cool_earth
-			height: 700px
-			background: url('../img/mianimage.png') center
-			background-size: 100%
-			background-repeat: no-repeat
+		// background: #eee
+		padding-top: 50px
+	
+		h2 
+			font-size: 32px
+			text-align: center
+			margin-bottom: 10px
+			color: #17317c
+		p 
+			font-size: 16px
+			text-align: center
+			color: #888
+			line-height: 1.4
+		.w_main
+			position: relative
+			height: 650px
+			overflow: hidden
+			.dotline
+				position: absolute
+				width: 100%
+				height: 800px
+				background: url('../img/dotline.png') bottom
+				background-size: 100%
+				background-repeat: no-repeat
+
+
+			.cool_earth
+				position: absolute
+				width: 100%
+				height: 900px
+				background: url('../img/earth.png') center
+				background-size: cover
+				background-repeat: no-repeat
+				top: 30%
+
+
+.motion_dotline
+	animation: dotline 1s infinite
+
+@keyframes dotline
+	0%
+		opacity: 1
+	30%
+		opacity: .8
+	50%
+		opacity: .5	
+	70%
+		opacity: .7
+	90%
+		opacity: .8
+	100%
+		opacity: 1
+
+
+.motion_earth
+	animation: earth 12s infinite linear
+
+@keyframes earth
+	0%
+		
+		transform: rotate(0deg)
+
+	100%
+		transform: rotate(359deg)
+
 
 
 
