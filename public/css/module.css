@@ -3200,6 +3200,85 @@ a {
     padding: 8px 20px;
     float: right; } }
 
+.circle_wrapper {
+  width: 100%;
+  height: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative; }
+
+.circle_bg {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 5px solid #d5d7d7; }
+
+.circle_p1 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 5px solid transparent;
+  border-top: 5px solid #982;
+  -webkit-animation: loaderBorderRotate_1 2s forwards;
+  animation: loaderBorderRotate_1 2s forwards; }
+
+.circle_p2 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 5px solid transparent;
+  border-top: 5px solid #271;
+  -webkit-animation: loaderBorderRotate_2 3s iforwards;
+  animation: loaderBorderRotate_2 3s iforwards; }
+
+@-webkit-keyframes loaderBorderRotate_1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); } }
+
+@keyframes loaderBorderRotate_1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); } }
+
+@-webkit-keyframes loaderBorderRotate_2 {
+  0% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  100% {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg); } }
+
+@keyframes loaderBorderRotate_2 {
+  0% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  100% {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg); } }
+
 body {
   font-family: 'Noto Sans TC';
   -webkit-font-smoothing: antialiased;

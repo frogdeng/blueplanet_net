@@ -83,7 +83,40 @@
 
 
 
+<script>
 
+
+  $(window).scroll(function (event) {
+      var target_go_1_h = $('.target_go_1').offset().top;
+      var target_go_2_h = $('.target_go_2').offset().top;
+      var target_go_3_h = $('.target_go_3').offset().top;
+      var sc_1 = $(window).scrollTop() + 250;
+
+      // console.log(target_go_1_h);
+      // console.log(sc);
+      if(sc_1 > target_go_1_h){
+        $(".thoughts_motion_1 .dot_circle").addClass('motion_dot')
+        $(".funnel").addClass('motion_funnel')
+        $(".data_1").addClass('motion_data_1')
+        $(".data_2").addClass('motion_data_2')
+        $(".file").addClass('motion_file')
+      }
+      else{
+        $(".thoughts_motion_1 .dot_circle").removeClass('motion_dot')
+        $(".funnel").removeClass('motion_funnel')
+        $(".data_1").removeClass('motion_data_1')
+        $(".data_2").removeClass('motion_data_2')
+        $(".file").removeClass('motion_file')
+      }
+
+
+
+
+
+
+  });
+
+</script>
 
 
 <div class="aboutus">
@@ -123,17 +156,22 @@
 	</div>
 	<div class="clear"></div>
 
-	<div class="circle">
-		<div class="circle_c">
-			<h6>
-				結合數位人文<br>
-				推動數位典藏
-			</h6>
-			<p>
-				臺灣大學數位人文研究中心，成立於2007年，具有多項大型數位典藏專案執行經驗、資料庫建置等豐富經驗，包括文化部、國史館、史政局、臺灣歷史數位圖書館等機構之數位典藏計畫。
-			</p>
-		</div>
-	</div>
+
+<div class="circle_wrapper">
+
+	<div class="circle_bg"></div>
+	<div class="circle_p1"></div>
+	<div class="circle_p2"></div>
+
+</div>
+
+
+
+
+
+
+
+
 	</div>
 </div>
 
