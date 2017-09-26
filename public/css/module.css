@@ -1679,12 +1679,12 @@ a {
   .lightbox_a .detail_item img {
     margin-bottom: 10px; }
   .lightbox_a .detail_item h6 {
-    font-size: 23px;
+    font-size: 21px;
     line-height: 1.4;
     margin-bottom: 10px;
     color: #17317c; }
   .lightbox_a .detail_item p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
     margin-bottom: 10px;
     color: #231815; }
@@ -1717,15 +1717,26 @@ a {
   .lightbox_a .detail_item_col2 img {
     margin-bottom: 10px; }
   .lightbox_a .detail_item_col2 h6 {
-    font-size: 23px;
+    font-size: 21px;
     line-height: 1.4;
     margin-bottom: 10px;
-    color: #17317c; }
-  .lightbox_a .detail_item_col2 p {
-    font-size: 16px;
+    color: #17317c;
+    text-align: left; }
+  .lightbox_a .detail_item_col2 h5 {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
     line-height: 1.5;
+    margin-bottom: 2px;
+    color: #231815;
+    text-align: left; }
+  .lightbox_a .detail_item_col2 p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.6;
     margin-bottom: 3px;
-    color: #231815; } }
+    color: #231815;
+    text-align: left; } }
 
 @media (min-width: 891px) {
   .lightbox_a {
@@ -1737,6 +1748,7 @@ a {
     display: block;
     clear: both; }
   .lightbox_a .detail_item {
+    height: 350px;
     padding: 20px;
     padding-top: 30px;
     width: 30.83333%;
@@ -1760,15 +1772,26 @@ a {
   .lightbox_a .detail_item img {
     margin-bottom: 10px; }
   .lightbox_a .detail_item h6 {
-    font-size: 23px;
+    font-size: 21px;
     line-height: 1.4;
     margin-bottom: 10px;
-    color: #17317c; }
-  .lightbox_a .detail_item p {
-    font-size: 16px;
+    color: #17317c;
+    text-align: left; }
+  .lightbox_a .detail_item h5 {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
     line-height: 1.5;
-    margin-bottom: 10px;
-    color: #231815; }
+    margin-bottom: 2px;
+    color: #231815;
+    text-align: left; }
+  .lightbox_a .detail_item p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 3px;
+    color: #231815;
+    text-align: left; }
   .lightbox_a .detail_item_col2 {
     padding: 20px;
     padding-top: 30px;
@@ -1801,12 +1824,23 @@ a {
     font-size: 23px;
     line-height: 1.4;
     margin-bottom: 10px;
-    color: #17317c; }
-  .lightbox_a .detail_item_col2 p {
-    font-size: 16px;
+    color: #17317c;
+    text-align: left; }
+  .lightbox_a .detail_item_col2 h5 {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 700;
     line-height: 1.5;
+    margin-bottom: 2px;
+    color: #231815;
+    text-align: left; }
+  .lightbox_a .detail_item_col2 p {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.6;
     margin-bottom: 3px;
-    color: #231815; } }
+    color: #231815;
+    text-align: left; } }
 
 @media (min-width: 0) and (max-width: 890px) {
   .our_clients {
