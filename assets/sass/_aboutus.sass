@@ -118,13 +118,15 @@ $susy: (debug: (image: hide))
 .aboutus_article
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-		padding: 0 40px
+		padding: 0 20px
 
 		.p-text
+
 			text-align: center
 			font-size: 25px
 			color: #17317c
 			margin-bottom: 50px
+
 		.article_contain
 			+span(6)
 			p
@@ -138,7 +140,8 @@ $susy: (debug: (image: hide))
 		padding: 0 40px
 
 		.p-text
-			text-align: center
+			+span(8)
+			+pre(2)
 			font-size: 25px
 			color: #17317c
 			margin-bottom: 50px
@@ -150,6 +153,14 @@ $susy: (debug: (image: hide))
 				color: #555
 				line-height: 1.5
 				margin-bottom: 20px
+
+
+
+
+
+
+
+
 
 
 
@@ -394,109 +405,367 @@ $susy: (debug: (image: hide))
 
 
 
-
 .circle_wrapper
-	width: 100%
-	height: 1200px
-	display: flex
-	flex-direction: row
-	align-items: center
-	justify-content: center
-	position: relative
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		padding: 0 10px
+		width: 100%
+		height: 500px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		position: relative
+		overflow: hidden
+		.circle_bg
+			// position: absolute
+			width: 300px
+			height: 300px
+			border-radius: 50%
+			box-sizing: border-box
+			border: 5px solid #d5d7d7
+			// display: flex
+			// flex-direction: row
+			// align-items: center
+			// justify-content: center
+			position: relative
 
-.circle_bg
-	// position: absolute
-	width: 600px
-	height: 600px
-	border-radius: 50%
-	box-sizing: border-box
-	border: 5px solid #d5d7d7
+			.c_des_1,.c_des_2,.c_des_3,.c_des_4,.c_des_5
+				position: absolute
+				width: 300px
+				height: 300px
+				padding: 20px 23px
+				// background: #289
+				left: 0
+				top: 0
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+				h4 
+					font-size: 20px
+					line-height: 1.2
+					margin-bottom: 5px
+					color: #69c5b2
+					font-weight: 700
+				p 
+					font-size: 13px
+
+			.c_des_1
+				opacity: 1
+				animation: showtext1 2s forwards
+				animation-delay: 2s
+			.c_des_2
+				opacity: 0
+				animation: showtext 2s forwards
+				animation-delay: 4s
+			.c_des_3
+				opacity: 0
+				animation: showtext 2s forwards
+				animation-delay: 6s
+			.c_des_4
+				opacity: 0
+				animation: showtext_end 2s forwards
+				animation-delay: 8s
+		.circle_p1, .circle_p2,.circle_p3,.circle_p4
+			position: absolute
+			width: 300px
+			height: 300px
+			border-radius: 50%
+			transform: rotate(45deg)
+			box-sizing: border-box
+			border: 5px solid transparent
+			border-top: 5px solid #2da1c9
+			z-index: 2300
+
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
+		width: 100%
+		height: 800px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		position: relative
+
+		.circle_bg
+			// position: absolute
+			width: 500px
+			height: 500px
+			border-radius: 50%
+			box-sizing: border-box
+			border: 5px solid #d5d7d7
+			// display: flex
+			// flex-direction: row
+			// align-items: center
+			// justify-content: center
+			position: relative
+
+			.c_des_1,.c_des_2,.c_des_3,.c_des_4,.c_des_5
+				position: absolute
+				width: 500px
+				height: 500px
+				padding: 30px 50px
+				// background: #289
+				left: 0
+				top: 0
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+				h4 
+					font-size: 30px
+					line-height: 1.2
+					margin-bottom: 20px
+					color: #69c5b2
+					font-weight: 700
+				p 
+					font-size: 16px
+
+			.c_des_1
+				opacity: 1
+				animation: showtext1 2s forwards
+				animation-delay: 2s
+			.c_des_2
+				opacity: 0
+				animation: showtext 2s forwards
+				animation-delay: 4s
+			.c_des_3
+				opacity: 0
+				animation: showtext 2s forwards
+				animation-delay: 6s
+			.c_des_4
+				opacity: 0
+				animation: showtext_end 2s forwards
+				animation-delay: 8s
+
+		.circle_p1, .circle_p2,.circle_p3,.circle_p4
+			position: absolute
+			width: 500px
+			height: 500px
+			border-radius: 50%
+			transform: rotate(45deg)
+			box-sizing: border-box
+			border: 5px solid transparent
+			border-top: 5px solid #2da1c9
+			z-index: 2300
+
+
+@keyframes showtext1
+	0%
+		opacity: 1
+	85%
+		opacity: 1	
+	100%
+		opacity: 0
+
+@keyframes showtext
+	0%
+		opacity: 0
+	15%
+		opacity: 1	
+	99%
+		opacity: 1	
+	100%
+		opacity: 0
+@keyframes showtext_end
+	0%
+		opacity: 0
+	15%
+		opacity: 1	
+	100%
+		opacity: 1
 
 
 
 
 .circle_p1
-	position: absolute
-	width: 600px
-	height: 600px
-	border-radius: 50%
-	box-sizing: border-box
-	border: 5px solid transparent
-	border-top: 5px solid #982
-	animation: loaderBorderRotate_1 2s forwards
-
+	animation: loader_1 2s forwards
 .circle_p2
-	position: absolute
-	width: 600px
-	height: 600px
-	border-radius: 50%
-	box-sizing: border-box
-	border: 5px solid transparent
-	border-top: 5px solid #271
-	animation: loaderBorderRotate_2 3s iforwards
+	animation: loader_2 2s forwards
+	animation-delay: 2s
+.circle_p3
+	animation: loader_3 2s forwards
+	animation-delay: 4s
+.circle_p4
+	animation: loader_4 2s forwards
+	animation-delay: 6s
 
 
-@keyframes loaderBorderRotate_1
+@keyframes loader_1
 	0%
-		transform: rotate(0deg)
-
-	100%
+		opacity: 0
 		transform: rotate(45deg)
 
+	100%
+		opacity: 1
+		transform: rotate(45deg)
 
-
-@keyframes loaderBorderRotate_2
+@keyframes loader_2
 	0%
 		transform: rotate(45deg)
 
 	100%
 		transform: rotate(135deg)
 
+@keyframes loader_3
+	0%
+		transform: rotate(135deg)
+
+	100%
+		transform: rotate(225deg)
+
+@keyframes loader_4
+	0%
+		transform: rotate(225deg)
+
+	100%
+		transform: rotate(315deg)
 
 
 
-// .circle:after
-// 	content: ''
-// 	display: block
-// 	position: absolute
-// 	box-sizing: border-box
-// 	top: 0
-// 	left: 0
-// 	right: 0
-// 	bottom: 0
-// 	border: 3px solid transparent
-// 	border-top: 3px solid #123
-// 	border-left: 3px solid #234
-// 	border-radius: 50%
-// 	animation: loaderBorderRotate_1 1s infinite
+.dot_1
+	position: absolute
+	width: 20px
+	height: 20px
+	border-radius: 50%
+	background: #999
+	right: -12px
+	top: 50%
+	margin-top: -5px
+	z-index: 2500
+	animation: dot 1s forwards
 
-// .circle:before
-// 	content: ''
-// 	display: block
-// 	position: absolute
-	// box-sizing: border-box
-// 	top: 0
-// 	left: 0
-// 	right: 0
-// 	bottom: 0
-// 	border: 3px solid transparent
-// 	border-top: 3px solid #2D9D31
-// 	border-right: 3px solid #2D9D31
-// 	border-radius: 50%
-// 	animation: loaderBorderRotate 2s infinite reverse
+.dot_2
+	position: absolute
+	width: 20px
+	height: 20px
+	border-radius: 50%
+	background: #999
+	left: 50%
+	bottom: -12px
+	margin-left: -5px
+	z-index: 2600
+	animation: dot 1s forwards
+	animation-delay: 4s
+.dot_3
+	position: absolute
+	width: 20px
+	height: 20px
+	border-radius: 50%
+	background: #999
+	left: -12px
+	top: 50%
+	margin-top: -5px
+	z-index: 2700
+	animation: dot 1s forwards
+	animation-delay: 6s
+.dot_4
+	position: absolute
+	width: 20px
+	height: 20px
+	border-radius: 50%
+	background: #999
+	left: 50%
+	top: -12px
+	margin-left: -5px
+	z-index: 2800
+	animation: dot 1s forwards
+	animation-delay: 8s
+
+@keyframes dot
+	0%
+		background: #999
+
+	100%
+		background: #2da1c9
 
 
+.date_1
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		display: none
 
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		display: block
+		font-size: 20px
+		opacity: 0
+		position: absolute
+		width: 150px
+		height: 40px
+		right: -36%
+		top: 48%
+		z-index: 2800
+		color: #69c5b2
+		animation: date 1s forwards
+.date_2
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		display: none
 
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		display: block
+		font-size: 20px
+		opacity: 0
+		position: absolute
+		width: 150px
+		height: 40px
+		right: 23%
+		bottom: -12%
+		z-index: 2800
+		color: #69c5b2
+		animation: date 1s forwards
+		animation-delay: 3s
 
+.date_3
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		display: none
 
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		display: block
+		font-size: 20px
+		opacity: 0
+		position: absolute
+		width: 150px
+		height: 40px
+		left: -26%
+		top: 49%
+		z-index: 2800
+		color: #69c5b2
+		animation: date 1s forwards
+		animation-delay: 5s
 
+.date_4
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		display: none
 
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		display: block
+		font-size: 20px
+		opacity: 0
+		position: absolute
+		width: 100px
+		text-align: center
+		height: 40px
+		right: 39%
+		top: -10%
+		z-index: 2800
+		color: #69c5b2
+		animation: date 1s forwards
+		animation-delay: 7s
 
+@keyframes date
+	0%
+		opacity: 0
 
-
-
-
+	100%
+		opacity: 1
 
 
 
