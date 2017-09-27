@@ -8,7 +8,8 @@
 @import _aboutus
 
 
-@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css)
+@import url('http://fonts.googleapis.com/earlyaccess/notosanstc.css')
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif')
 
 // shorthand
 $desktop: 12 (70px 30px) split
@@ -21,7 +22,7 @@ $breakpoint_desktop: 891px
 $breakpoint_pad: 0 890px
 
 body
-	font-family: 'Noto Sans TC'
+	font-family: 'Noto Sans TC', 'Noto Serif', serif;
 	// font-family: Microsoft JhengHei
 	-webkit-font-smoothing: antialiased
 	overflow-x: hidden
@@ -249,57 +250,33 @@ header
 
 
 .logo
-	position: relative
 	width: 300px
 	height: 300px
 	padding: 10px
-	perspective: 600px
-
-
-.logo .front img
-
-
-.logo .front
-	position: absolute
-	transform: rotateX(0deg) rotateY(0deg)
-	transform-style: preserve-3d
-	backface-visibility: hidden
-
-	transition: all .2s ease-in-out
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	align-items: center
 
 
 
-.logo .back
-	position: absolute
-	width: 300px
-	height: 300px
-	background: #929292
-	overflow: hidden
-	text-align: center
-	z-index: 8
-	border-radius: 50%
-	transform: rotateX(-180deg)
-	transform-style: preserve-3d
-	backface-visibility: hidden
-	transition: all .2s ease-in-out
-
-
-
-
-
-.logo_flip
-	animation: logo_flip 5s infinite
+.logo_rotate
+	animation: logo_rotate 8s forwards infinite
 	// animation-direction: alternate
+	// animation-delay: 3s
 
-@keyframes logo_flip
+@keyframes logo_rotate
 	0%
-		transform: rotateY(0deg)
-	80%
-		transform: rotateY(0deg)
-	85%
-		transform: rotateY(180deg)
-	90%
-		transform: rotateY(0deg)
+		transform: rotate(0deg)
+	2%
+		transform: rotate(0deg)
+	8%
+		transform: rotate(360deg)
+
+	100%
+		transform: rotate(360deg)
+
+
 
 
 
