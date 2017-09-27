@@ -99,105 +99,120 @@ $susy: (debug: (image: hide))
 .products_contnet
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-		margin-top: 60px
-		margin-bottom: 60px
-		padding: 0 20px
-		display: flex
-		flex-direction: column
-		align-items: center
-		justify-content: center
-		.photo
-			+span(6)
+		.mobile_side
+			display: block
+			margin-top: 60px
+			margin-bottom: 60px
+			padding: 0 20px
 			display: flex
+			flex-direction: column
 			align-items: center
 			justify-content: center
-			margin-bottom: 20px
-			img
-				width: 80%
-			.choose
-				
-				img
-					width: 100%
-					border: 1px solid #eee
-		.description
-			+span(6)
-			img
-				display: block
-				width: 50%
-				margin: 0 auto
-				margin-bottom: 30px
-			h6
-				font-size: 20px
-				color: #0067bc
+			.photo
+				+span(6)
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
 				margin-bottom: 20px
-				font-weight: 700
-				text-align: center
+				.product-logo
+					display: block
+					width: 65%
+					margin-bottom: 40px
+				.product-img
+					display: block
+					width: 100%
 
-			p
-				font-size: 16px
-				color: #555
-				line-height: 1.5
-			a
-				display: block
-				font-size: 16px
-				color: #0067bc
-				margin-top: 40px
-				text-align: center
-				margin-bottom: 40px
-		.l-line
-			width: 100%
-			height: 2px
-			background: #eee
-			clear: both
+				.choose
+					img
+						width: 100%
+						border: 1px solid #eee
+			.description
+				+span(6)
+				img
+					display: block
+					width: 50%
+					margin: 0 auto
+					margin-bottom: 30px
+				h6
+					font-size: 20px
+					color: #0067bc
+					margin-bottom: 20px
+					font-weight: 700
+					text-align: center
 
+				p
+					font-size: 16px
+					color: #555
+					line-height: 1.5
+				a
+					display: block
+					font-size: 16px
+					color: #0067bc
+					margin-top: 40px
+					text-align: center
+					margin-bottom: 40px
+			.l-line
+				width: 100%
+				height: 2px
+				background: #eee
+				clear: both
+		.dektop_side
+			display: none
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		margin-top: 100px
-		margin-bottom: 100px
-		padding: 50px 20px
-		display: flex
-		flex-direction: row
-		align-items: center
-		justify-content: center
-		.photo
-			+span(6)
+		.mobile_side
+			display: none
+
+		.dektop_side
+			display: block
+			margin-top: 100px
+			margin-bottom: 100px
+			padding: 50px 20px
 			display: flex
+			flex-direction: row
 			align-items: center
 			justify-content: center
-			position: relative
-			.choose
-				position: absolute
-				width: 146%
-				right: -44%
-				top: -310px
-				transform: rotate(-12deg)
-				img 
-					border: 1px solid #eee
-		.description
-			+span(6)
-			img
-				margin-bottom: 30px
-			h6
-				font-size: 20px
-				color: #0067bc
-				margin-bottom: 20px
-				font-weight: 700
-			p
-				font-size: 16px
-				color: #555
-				line-height: 1.5
-			a
-				display: block
-				font-size: 16px
-				color: #0067bc
-				margin-top: 40px
-		.l-line
-			width: 100%
-			height: 2px
-			background: #eee
-			clear: both
+			.photo
+				+span(6)
+				display: flex
+				flex-direction: row
+				align-items: center
+				justify-content: center
+				position: relative
+				.choose
+					position: absolute
+					width: 146%
+					right: -44%
+					top: -310px
+					transform: rotate(-12deg)
+					img
+						border: 1px solid #eee
+			.description
+				+span(6)
+				img
+					margin-bottom: 30px
+				h6
+					font-size: 20px
+					color: #0067bc
+					margin-bottom: 20px
+					font-weight: 700
+				p
+					font-size: 16px
+					color: #555
+					line-height: 1.5
+				a
+					display: block
+					font-size: 16px
+					color: #0067bc
+					margin-top: 40px
+			.l-line
+				width: 100%
+				height: 2px
+				background: #eee
+				clear: both
 
 
 
