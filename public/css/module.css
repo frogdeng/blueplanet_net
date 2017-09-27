@@ -369,7 +369,8 @@ a {
   .core_tech .core_tech_contain .core_descrition h5 {
     font-size: 25px;
     margin-bottom: 20px;
-    line-height: 1.3; }
+    line-height: 1.3;
+    font-family: 'Noto Serif',serif; }
   .core_tech .core_tech_contain .core_descrition h6 {
     font-size: 17px;
     margin-bottom: 10px;
@@ -423,11 +424,13 @@ a {
   .core_tech .core_tech_contain .core_descrition {
     background: #FFF;
     padding: 50px 30px;
-    height: auto; }
+    height: auto;
+    height: 400px; }
   .core_tech .core_tech_contain .core_descrition h5 {
     font-size: 25px;
     margin-bottom: 20px;
-    line-height: 1.3; }
+    line-height: 1.3;
+    font-family: 'Noto Serif',serif; }
   .core_tech .core_tech_contain .core_descrition h6 {
     font-size: 17px;
     margin-bottom: 10px;
@@ -506,7 +509,8 @@ a {
     font-size: 30px;
     margin-bottom: 15px;
     line-height: 1.3;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Noto Serif', serif; }
   .product_service .product_service_contnet .product_descrition p {
     font-size: 14px;
     line-height: 1.8;
@@ -566,9 +570,9 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
@@ -598,7 +602,8 @@ a {
     font-size: 30px;
     margin-bottom: 15px;
     line-height: 1.3;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Noto Serif', serif; }
   .product_service .product_service_contnet_wrapper .product_service_contnet .product_descrition p {
     font-size: 14px;
     line-height: 1.8;
