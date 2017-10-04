@@ -278,18 +278,22 @@ $susy: (debug: (image: hide))
 			img
 				margin-bottom: 20px
 			.product_descrition
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
 				h6
 					font-size: 30px
 					margin-bottom: 15px
 					line-height: 1.3
 					text-align: center
 					font-family: 'Noto Serif', serif
-
-
 				p
 					font-size: 14px
 					line-height: 1.8
 					text-align: center
+				a 
+					margin-top: 30px
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -324,7 +328,7 @@ $susy: (debug: (image: hide))
 			align-items: flex-start
 			justify-content: center
 			.product_service_contnet
-				+span(4)
+				
 				padding: 0 10px
 				display: flex
 				flex-direction: column
@@ -334,6 +338,11 @@ $susy: (debug: (image: hide))
 				img
 					margin-bottom: 80px
 				.product_descrition
+					width: 60%
+					display: flex
+					flex-direction: column
+					align-items: center
+					justify-content: center
 					h6
 						font-size: 30px
 						margin-bottom: 15px
@@ -344,7 +353,8 @@ $susy: (debug: (image: hide))
 						font-size: 14px
 						line-height: 1.8
 						text-align: center
-
+					a 
+						margin-top: 40px
 
 
 .div_hidden
