@@ -102,7 +102,7 @@ $susy: (debug: (image: hide))
 			margin-bottom: 50px
 			.thoughts_motion_1
 				+span(6)
-				height: 550px
+				height: 450px
 				display: flex
 				flex-direction: column
 				align-items: center
@@ -129,7 +129,7 @@ $susy: (debug: (image: hide))
 					opacity: 0
 				.file
 					position: absolute
-					bottom: 50px
+					bottom: 70px
 					opacity: 0
 					color: #c92d2d
 					transform: scale(.3)
@@ -138,25 +138,28 @@ $susy: (debug: (image: hide))
 
 			.thoughts_motion_2
 				+span(6)
-				height: 550px
+				height: 450px
 				display: flex
 				flex-direction: row
 				align-items: center
 				justify-content: center
 				position: relative
+				// background: #191
 				.dot_circle
-					position: absolute
+					// position: absolute
 					display: flex
 					flex-direction: column
 					align-items: center
 					justify-content: center
 					opacity: 0
 				.data_windows
+					position: absolute
 					display: flex
 					flex-direction: row
 					align-items: center
 					justify-content: center
 					opacity: 0
+					top: 70px
 					.w1,.w2, .w3, .w4, .w5, .w6
 						position: absolute
 						left: 27%
@@ -172,26 +175,26 @@ $susy: (debug: (image: hide))
 
 			.thoughts_motion_3
 				+span(6)
-				height: 600px
+				height: 500px
 				display: flex
 				flex-direction: row
 				align-items: center
 				justify-content: center
 				position: relative
 				.dot_circle
-					position: absolute
+					// position: absolute
 					display: flex
 					flex-direction: column
 					align-items: center
 					justify-content: center
 					opacity: 0
 				.flash_windows
-					// position: absolute
+					position: absolute
 					display: flex
 					flex-direction: row
 					justify-content: center
 					align-items: center
-					margin-top: 200px
+					top: 300px
 					cursor: pointer
 					opacity: 0
 					.f1,.f2, .f3
@@ -264,7 +267,6 @@ $susy: (debug: (image: hide))
 				.data_1
 					position: absolute
 					opacity: 0
-
 
 				.data_2
 					position: absolute
@@ -368,6 +370,11 @@ $susy: (debug: (image: hide))
 		.arrow_down
 			margin-bottom: 10px
 
+
+
+
+
+
 .motion_show
 	animation: show 2s forwards
 @keyframes show
@@ -379,16 +386,24 @@ $susy: (debug: (image: hide))
 		opacity: 1
 
 
-.motion_dot
+.motion_dot_1
+	animation: dot_circle 2s forwards
+.motion_dot_2
+	animation: dot_circle 2s forwards
+.motion_dot_3
 	animation: dot_circle 2s forwards
 
 @keyframes dot_circle
 	from
-		width: 10%
+		width: 5%
 		opacity: 0
 	to
 		width: 100%
 		opacity: 1
+
+
+
+
 
 .motion_funnel
 	animation: funnel 2s forwards
@@ -409,10 +424,14 @@ $susy: (debug: (image: hide))
 	from
 		top: 0
 		opacity: 1
+		left: 50%
+		margin-left: -136px
 	to
 		top: 50px
 		opacity: 0
 		transform: scale(.4)
+		left: 50%
+		margin-left: -136px
 
 
 .motion_data_2
@@ -423,10 +442,14 @@ $susy: (debug: (image: hide))
 	from
 		top: 0px
 		opacity: 1
+		left: 50%
+		margin-left: -87px
 	to
 		top: 90px
 		opacity: 0
 		transform: scale(.3)
+		left: 50%
+		margin-left: -87px
 
 .motion_file
 	animation: file 5s infinite
@@ -437,15 +460,21 @@ $susy: (debug: (image: hide))
 		bottom: 85px
 		opacity: 0
 		transform: scale(.3)
+		left: 50%
+		margin-left: -33px
 	30%
 		bottom: 50px
 		opacity: 1
 		transform: scale(1)
+		left: 50%
+		margin-left: -33px
 
 	100%
 		bottom: 30px
 		opacity: 0
 		transform: scale(1)
+		left: 50%
+		margin-left: -33px
 
 // ======
 .motion_w1
@@ -564,14 +593,22 @@ $susy: (debug: (image: hide))
 	0%
 		top: 50px
 		opacity: 1
+		left: 50%
+		margin-left: -72px
 	30%
 		top: 90px
 		opacity: 1
 		transform: scale(.7)
+		left: 50%
+		margin-left: -72px
+
 	100%
 		top: 180px
 		opacity: 0
 		transform: scale(.3)
+		left: 50%
+		margin-left: -72px
+
 
 
 
