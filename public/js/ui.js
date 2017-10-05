@@ -20,10 +20,43 @@ $(function(){
 
 
 
+
   $(".hamburg").click(function(){
      $('.aside').delay(200).toggleClass("hamburg-open");
      $(this).delay(200).toggleClass("cross");
     });
+
+
+  $(".show-1").click(function(){
+        $('.active-1').addClass("second-open");
+      });
+  $(".show-2").click(function(){
+        $('.active-2').addClass("second-open");
+      });
+  $(".show-3").click(function(){
+        $('.active-3').addClass("second-open");
+      });
+  $(".show-4").click(function(){
+        $('.active-4').addClass("second-open");
+      });
+
+
+
+  $(".second-goback").click(function(){
+      $('.m-second_bg').removeClass("second-open");
+
+    });
+
+
+  $(".hamburg").click(function(){
+      $('.m-second_bg').removeClass("second-open");
+    });
+
+  $(".switch_btn").click(function(){
+      $('.interpretation_data').toggleClass("auto_height");
+    });
+
+
 
 
 
