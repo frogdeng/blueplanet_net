@@ -38,6 +38,7 @@
         $(".w5").addClass('motion_w5')
         $(".data_windows").addClass('motion_show')
         $(".magnifier").addClass('motion_magnifier')
+        $(".clickme-2").addClass('motion_clickme_2')
       }
       else{
         $(".thoughts_motion_2 .dot_circle").removeClass('motion_dot_2')
@@ -48,6 +49,7 @@
         $(".w5").removeClass('motion_w5')
         $(".data_windows").removeClass('motion_show')
         $(".magnifier").removeClass('motion_magnifier')
+        $(".clickme-2").removeClass('motion_clickme_2')
       }
 
 
@@ -56,7 +58,7 @@
         $(".f1").addClass('motion_f1')
         $(".f2").addClass('motion_f2')
         $(".f3").addClass('motion_f3')
-        $(".flash_windows").addClass('motion_show')
+        $(".flash_windows").addClass('motion_flash_windows')
         $(".godown").addClass('motion_godown')
       }
       else{
@@ -64,7 +66,7 @@
         $(".f1").removeClass('motion_f1')
         $(".f2").removeClass('motion_f2')
         $(".f3").removeClass('motion_f3')
-        $(".flash_windows").removeClass('motion_show')
+        $(".flash_windows").removeClass('motion_flash_windows')
         $(".godown").removeClass('motion_godown')
       }
   });
@@ -144,9 +146,8 @@
 					<div class="w5"><img src="img/window_05.png" alt=""></div>
 				</div>
 				<div class="magnifier" data-iziModal-open="#modal-b"><img src="img/magnifier.png" alt=""></div>
+				<div class="clickme-2"><a href="#modal-b">點我</a></div>
 			</div>
-
-
 
 			<div class="thoughts_col">
 				<h5>精準，更求完整</h5>
@@ -171,6 +172,8 @@
 
 			<div class="thoughts_motion_3">
 				<div class="dot_circle"><img src="img/dot_circle.png" alt=""></div>
+				<div class="clickme-3"><a href="#modal-c">點我</a></div>
+
 				<div class="flash_windows" data-iziModal-open="#modal-c">
 					<div class="f1"><img src="img/f_window_01.png" alt=""></div>
 					<div class="f2"><img src="img/f_window_02.png" alt=""></div>
@@ -238,7 +241,7 @@
 
 <!-- modal-b -->
 <div id="modal-b" class="iziModal"  >
- <button data-iziModal-close class="icon-close">x</button>
+  <button data-iziModal-close class="icon-close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
 		<div class="lightbox_a">
 			<div class="detail_item">
 				<img src="img/good_icon_07.png" alt="">
@@ -278,7 +281,7 @@
 
 <!-- modal-c -->
 <div id="modal-c" class="iziModal" >
- <button data-iziModal-close class="icon-close">x</button>
+  <button data-iziModal-close class="icon-close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
 
 		<div class="lightbox_a">
 			<div class="detail_item_col2">

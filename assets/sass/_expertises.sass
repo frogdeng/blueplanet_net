@@ -160,6 +160,8 @@ $susy: (debug: (image: hide))
 					justify-content: center
 					opacity: 0
 					top: 70px
+					left: 50%
+					margin-left: -190px
 					.w1,.w2, .w3, .w4, .w5, .w6
 						position: absolute
 						left: 27%
@@ -190,13 +192,15 @@ $susy: (debug: (image: hide))
 					opacity: 0
 				.flash_windows
 					position: absolute
-					display: flex
-					flex-direction: row
-					justify-content: center
-					align-items: center
-					top: 300px
+					// display: flex
+					// flex-direction: row
+					// justify-content: center
+					// align-items: center
 					cursor: pointer
 					opacity: 0
+					top: 200px
+					left: 50%
+					margin-left: -135px
 					.f1,.f2, .f3
 						position: absolute
 						// display: none
@@ -331,14 +335,15 @@ $susy: (debug: (image: hide))
 					justify-content: center
 					opacity: 0
 				.flash_windows
-					// position: absolute
-					display: flex
-					flex-direction: row
-					justify-content: center
-					align-items: center
-					margin-top: 200px
+					position: absolute
+					// display: flex
+					// flex-direction: row
+					// justify-content: center
+					// align-items: center
+					margin-top: 10px
 					cursor: pointer
 					opacity: 0
+
 					.f1,.f2, .f3
 						position: absolute
 						// display: none
@@ -386,6 +391,24 @@ $susy: (debug: (image: hide))
 		opacity: 1
 
 
+.motion_flash_windows
+	animation: flash_windows 2s forwards
+@keyframes flash_windows
+	from
+		width: 10%
+		opacity: 0
+		left: 50%
+		margin-left: -135px
+	to
+		width: 100%
+		opacity: 1
+		left: 50%
+		margin-left: -135px
+
+
+
+
+
 .motion_dot_1
 	animation: dot_circle 2s forwards
 .motion_dot_2
@@ -411,10 +434,16 @@ $susy: (debug: (image: hide))
 @keyframes funnel
 	from
 		opacity: 0
+		left: 50%
+		margin-left: -60px
 	50%
 		opacity: 0
+		left: 50%
+		margin-left: -60px
 	to
 		opacity: 1
+		left: 50%
+		margin-left: -60px
 
 .motion_data_1
 	animation: data_1 3s infinite
@@ -537,13 +566,41 @@ $susy: (debug: (image: hide))
 		bottom: 100px
 		opacity: 1
 	50%
-		left: 220px
-		bottom: 30px
+		left: 120px
+		bottom: 10px
 		opacity: 1
 	100%
 		left: 300px
 		bottom: 100px
 		opacity: 1
+
+.motion_clickme_2
+	animation: clickme_2 5s infinite
+@keyframes clickme_2
+	0%
+		left: 290px
+		bottom: 100px
+		opacity: 1
+	10%
+		left: 290px
+		bottom: 100px
+		opacity: 1
+	50%
+		left: 110px
+		bottom: 10px
+		opacity: 1
+	100%
+		left: 290px
+		bottom: 100px
+		opacity: 1
+
+
+
+
+
+
+
+
 
 
 // ======
@@ -764,8 +821,37 @@ $susy: (debug: (image: hide))
 				color: #231815
 				text-align: left
 
-.clickme
+.clickme-2
 	position: absolute
-	bottom: 30px
+	width: 50px
+	text-align: left
+	// background: #190
+	bottom: 50px
 	right: 220px
 	color: #c92d2d
+	a 
+		color: #c92d2d
+
+.clickme-3
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		position: absolute
+		width: 50px
+		text-align: left
+		// background: #190
+		bottom: 125px
+		right: 70px
+		color: #c92d2d
+		a 
+			color: #c92d2d
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		position: absolute
+		width: 50px
+		text-align: left
+		// background: #190
+		bottom: 45px
+		right: 180px
+		color: #c92d2d
+		a 
+			color: #c92d2d

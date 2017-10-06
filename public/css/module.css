@@ -1007,7 +1007,9 @@ a {
     -ms-flex-pack: center;
     justify-content: center;
     opacity: 0;
-    top: 70px; }
+    top: 70px;
+    left: 50%;
+    margin-left: -190px; }
   .thoughts section .thoughts_motion_2 .data_windows .w1, .thoughts section .thoughts_motion_2 .data_windows .w2, .thoughts section .thoughts_motion_2 .data_windows .w3, .thoughts section .thoughts_motion_2 .data_windows .w4, .thoughts section .thoughts_motion_2 .data_windows .w5, .thoughts section .thoughts_motion_2 .data_windows .w6 {
     position: absolute;
     left: 27%;
@@ -1055,22 +1057,11 @@ a {
     opacity: 0; }
   .thoughts section .thoughts_motion_3 .flash_windows {
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    top: 300px;
     cursor: pointer;
-    opacity: 0; }
+    opacity: 0;
+    top: 200px;
+    left: 50%;
+    margin-left: -135px; }
   .thoughts section .thoughts_motion_3 .flash_windows .f1, .thoughts section .thoughts_motion_3 .flash_windows .f2, .thoughts section .thoughts_motion_3 .flash_windows .f3 {
     position: absolute; }
   .thoughts section .thoughts_motion_3 .godown {
@@ -1297,20 +1288,8 @@ a {
     justify-content: center;
     opacity: 0; }
   .thoughts section .thoughts_motion_3 .flash_windows {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 200px;
+    position: absolute;
+    margin-top: 10px;
     cursor: pointer;
     opacity: 0; }
   .thoughts section .thoughts_motion_3 .flash_windows .f1, .thoughts section .thoughts_motion_3 .flash_windows .f2, .thoughts section .thoughts_motion_3 .flash_windows .f3 {
@@ -1365,6 +1344,34 @@ a {
     width: 100%;
     opacity: 1; } }
 
+.motion_flash_windows {
+  -webkit-animation: flash_windows 2s forwards;
+  animation: flash_windows 2s forwards; }
+
+@-webkit-keyframes flash_windows {
+  from {
+    width: 10%;
+    opacity: 0;
+    left: 50%;
+    margin-left: -135px; }
+  to {
+    width: 100%;
+    opacity: 1;
+    left: 50%;
+    margin-left: -135px; } }
+
+@keyframes flash_windows {
+  from {
+    width: 10%;
+    opacity: 0;
+    left: 50%;
+    margin-left: -135px; }
+  to {
+    width: 100%;
+    opacity: 1;
+    left: 50%;
+    margin-left: -135px; } }
+
 .motion_dot_1 {
   -webkit-animation: dot_circle 2s forwards;
   animation: dot_circle 2s forwards; }
@@ -1399,19 +1406,31 @@ a {
 
 @-webkit-keyframes funnel {
   from {
-    opacity: 0; }
+    opacity: 0;
+    left: 50%;
+    margin-left: -60px; }
   50% {
-    opacity: 0; }
+    opacity: 0;
+    left: 50%;
+    margin-left: -60px; }
   to {
-    opacity: 1; } }
+    opacity: 1;
+    left: 50%;
+    margin-left: -60px; } }
 
 @keyframes funnel {
   from {
-    opacity: 0; }
+    opacity: 0;
+    left: 50%;
+    margin-left: -60px; }
   50% {
-    opacity: 0; }
+    opacity: 0;
+    left: 50%;
+    margin-left: -60px; }
   to {
-    opacity: 1; } }
+    opacity: 1;
+    left: 50%;
+    margin-left: -60px; } }
 
 .motion_data_1 {
   -webkit-animation: data_1 3s infinite;
@@ -1639,8 +1658,8 @@ a {
     bottom: 100px;
     opacity: 1; }
   50% {
-    left: 220px;
-    bottom: 30px;
+    left: 120px;
+    bottom: 10px;
     opacity: 1; }
   100% {
     left: 300px;
@@ -1657,11 +1676,51 @@ a {
     bottom: 100px;
     opacity: 1; }
   50% {
-    left: 220px;
-    bottom: 30px;
+    left: 120px;
+    bottom: 10px;
     opacity: 1; }
   100% {
     left: 300px;
+    bottom: 100px;
+    opacity: 1; } }
+
+.motion_clickme_2 {
+  -webkit-animation: clickme_2 5s infinite;
+  animation: clickme_2 5s infinite; }
+
+@-webkit-keyframes clickme_2 {
+  0% {
+    left: 290px;
+    bottom: 100px;
+    opacity: 1; }
+  10% {
+    left: 290px;
+    bottom: 100px;
+    opacity: 1; }
+  50% {
+    left: 110px;
+    bottom: 10px;
+    opacity: 1; }
+  100% {
+    left: 290px;
+    bottom: 100px;
+    opacity: 1; } }
+
+@keyframes clickme_2 {
+  0% {
+    left: 290px;
+    bottom: 100px;
+    opacity: 1; }
+  10% {
+    left: 290px;
+    bottom: 100px;
+    opacity: 1; }
+  50% {
+    left: 110px;
+    bottom: 10px;
+    opacity: 1; }
+  100% {
+    left: 290px;
     bottom: 100px;
     opacity: 1; } }
 
@@ -1982,11 +2041,52 @@ a {
     color: #231815;
     text-align: left; } }
 
-.clickme {
+.clickme-2 {
   position: absolute;
-  bottom: 30px;
+  width: 50px;
+  text-align: left;
+  bottom: 50px;
   right: 220px;
   color: #c92d2d; }
+
+.clickme-2 a {
+  color: #c92d2d; }
+
+@media (min-width: 0) and (max-width: 890px) {
+  .clickme-3 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    width: 50px;
+    text-align: left;
+    bottom: 125px;
+    right: 70px;
+    color: #c92d2d; }
+  .clickme-3:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .clickme-3 a {
+    color: #c92d2d; } }
+
+@media (min-width: 891px) {
+  .clickme-3 {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    width: 50px;
+    text-align: left;
+    bottom: 45px;
+    right: 180px;
+    color: #c92d2d; }
+  .clickme-3:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .clickme-3 a {
+    color: #c92d2d; } }
 
 @media (min-width: 0) and (max-width: 890px) {
   .our_clients {
