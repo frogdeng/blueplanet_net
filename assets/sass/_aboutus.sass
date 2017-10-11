@@ -451,22 +451,7 @@ $susy: (debug: (image: hide))
 				p 
 					font-size: 13px
 
-			.c_des_1
-				opacity: 1
-				animation: showtext1 2s forwards
-				animation-delay: 2s
-			.c_des_2
-				opacity: 0
-				animation: showtext 2s forwards
-				animation-delay: 4s
-			.c_des_3
-				opacity: 0
-				animation: showtext 2s forwards
-				animation-delay: 6s
-			.c_des_4
-				opacity: 0
-				animation: showtext_end 2s forwards
-				animation-delay: 8s
+			
 		.circle_p1, .circle_p2,.circle_p3,.circle_p4
 			position: absolute
 			width: 300px
@@ -477,6 +462,8 @@ $susy: (debug: (image: hide))
 			border: 5px solid transparent
 			border-top: 5px solid #2da1c9
 			z-index: 2300
+			top: 100px
+
 
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
@@ -523,22 +510,7 @@ $susy: (debug: (image: hide))
 				p 
 					font-size: 16px
 
-			.c_des_1
-				opacity: 1
-				animation: showtext1 2s forwards
-				animation-delay: 2s
-			.c_des_2
-				opacity: 0
-				animation: showtext 2s forwards
-				animation-delay: 4s
-			.c_des_3
-				opacity: 0
-				animation: showtext 2s forwards
-				animation-delay: 6s
-			.c_des_4
-				opacity: 0
-				animation: showtext_end 2s forwards
-				animation-delay: 8s
+			
 
 		.circle_p1, .circle_p2,.circle_p3,.circle_p4
 			position: absolute
@@ -550,7 +522,46 @@ $susy: (debug: (image: hide))
 			border: 5px solid transparent
 			border-top: 5px solid #2da1c9
 			z-index: 2300
+			top: 150px
 
+.redo
+	width: 150px
+	height: 30px
+	margin: 0 auto
+	color: #888
+	border: 1px solid #c0c0c0
+	// border-radius: 50px
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: center
+	font-size: 14px
+	cursor: pointer
+	transition: all .3s
+	&:hover
+		background: #096faf
+		border: 1px solid #096faf
+		color: #FFF
+
+
+
+
+.c_des_1_animaiton
+	opacity: 1
+	animation: showtext1 2s forwards
+	animation-delay: 2s
+.c_des_2_animaiton
+	opacity: 0
+	animation: showtext 2s forwards
+	animation-delay: 4s
+.c_des_3_animaiton
+	opacity: 0
+	animation: showtext 2s forwards
+	animation-delay: 6s
+.c_des_4_animaiton
+	opacity: 0
+	animation: showtext_end 2s forwards
+	animation-delay: 8s
 
 @keyframes showtext1
 	0%
@@ -580,21 +591,21 @@ $susy: (debug: (image: hide))
 
 
 
-.circle_p1
-	top: 100px
+.circle_p1_animaiotn
 	animation: loader_1 2s forwards
-.circle_p2
+
+.circle_p2_animaiotn
 	animation: loader_2 2s forwards
 	animation-delay: 2s
-	top: 100px
-.circle_p3
+	
+.circle_p3_animaiotn
 	animation: loader_3 2s forwards
 	animation-delay: 4s
-	top: 100px
-.circle_p4
+	
+.circle_p4_animaiotn
 	animation: loader_4 2s forwards
 	animation-delay: 6s
-	top: 100px
+	
 
 
 @keyframes loader_1
@@ -704,6 +715,7 @@ $susy: (debug: (image: hide))
 		z-index: 2800
 		color: #69c5b2
 		animation: date 1s forwards
+		cursor: pointer
 .date_2
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
@@ -723,6 +735,7 @@ $susy: (debug: (image: hide))
 		color: #69c5b2
 		animation: date 1s forwards
 		animation-delay: 3s
+		cursor: pointer
 
 .date_3
 	+susy-breakpoint($breakpoint_pad, $pad)
@@ -743,6 +756,7 @@ $susy: (debug: (image: hide))
 		color: #69c5b2
 		animation: date 1s forwards
 		animation-delay: 5s
+		cursor: pointer
 
 .date_4
 	+susy-breakpoint($breakpoint_pad, $pad)
@@ -764,6 +778,7 @@ $susy: (debug: (image: hide))
 		color: #69c5b2
 		animation: date 1s forwards
 		animation-delay: 7s
+		cursor: pointer
 
 @keyframes date
 	0%

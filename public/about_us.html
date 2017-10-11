@@ -58,7 +58,7 @@
 				<li>
 					<a href="expertises.html">核心技術</a>
 					<ul class="dropdown ">
-						<li><a href="expertises.html#target_go_1">透事THOUGHTS API介紹</a></li>
+						<li><a href="expertises.html#target_go_1">透事：中文探勘分析系列技術</a></li>
 						<li><a href="expertises.html#target_go_2">中⽂檢索引擎</a></li>
 						<li><a href="expertises.html#target_go_3">數位⼈文架構</a></li>
 					</ul>
@@ -69,14 +69,14 @@
 						<li><a href="our_clients.html#target_1">輿情監測類</a></li>
 						<li><a href="our_clients.html#target_2">開放資料類</a></li>
 						<li><a href="our_clients.html#target_3">數位典藏類</a></li>
-						<li><a href="our_clients.html#target_4">其它</a></li>
+						<li><a href="our_clients.html#target_4">更多</a></li>
 
 					</ul>
 				</li>
 				<li>
 					<a href="product_info.html">產品資訊</a>
 					<ul class="dropdown ">
-						<li><a href="product_info.html#product_target_01">透事THOUGHTS</a></li>
+						<li><a href="product_info.html#product_target_01">透事雲端中文探勘API</a></li>
 						<li><a href="product_info.html#product_target_02">蛛思輿情平台</a></li>
 						<li><a href="product_info.html#product_target_03">GOTCHA標案捕手</a></li>
 					</ul>
@@ -115,7 +115,7 @@
 				<div class="m-second_bg active-1">
 					<div class="goback second-goback"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>核心技術</div>
 					<ul class="ul-second">
-						<li><a href="expertises.html#target_go_1" class="m-second">透事THOUGHTS API介紹</a></li>
+						<li><a href="expertises.html#target_go_1" class="m-second">透事：中文探勘分析系列技術</a></li>
 						<li><a href="expertises.html#target_go_2" class="m-second">中⽂檢索引擎</a></li>
 						<li><a href="expertises.html#target_go_3" class="m-second">數位⼈文架構</a></li>
 					</ul>
@@ -134,7 +134,7 @@
 						<li><a href="our_clients.html#target_1" class="m-second">輿情監測類</a></li>
 						<li><a href="our_clients.html#target_2" class="m-second">開放資料類</a></li>
 						<li><a href="our_clients.html#target_3" class="m-second">數位典藏類</a></li>
-						<li><a href="our_clients.html#target_4" class="m-second">其它</a></li>
+						<li><a href="our_clients.html#target_4" class="m-second">更多</a></li>
 
 					</ul>
 				</div>
@@ -148,7 +148,7 @@
 				<div class="m-second_bg active-3">
 					<div class="goback second-goback"><i class="fa fa-long-arrow-right" aria-hidden="true"></i>產品資訊</div>
 					<ul class="ul-second">
-						<li><a href="product_info.html#product_target_01" class="m-second">透事THOUGHTS</a></li>
+						<li><a href="product_info.html#product_target_01" class="m-second">透事雲端中文探勘API</a></li>
 						<li><a href="product_info.html#product_target_02" class="m-second">蛛思輿情平台</a></li>
 						<li><a href="product_info.html#product_target_03" class="m-second">GOTCHA標案捕手</a></li>
 					</ul>
@@ -186,43 +186,72 @@
 
 
   $(window).scroll(function (event) {
-      var target_go_1_h = $('.target_go_1').offset().top;
-      var target_go_2_h = $('.target_go_2').offset().top;
-      var target_go_3_h = $('.target_go_3').offset().top;
+      var circle_wrapper_h = $('.circle_wrapper').offset().top;
+
       var sc_1 = $(window).scrollTop() + 250;
 
       // console.log(target_go_1_h);
       // console.log(sc);
-      if(sc_1 > target_go_1_h){
-        $(".thoughts_motion_1 .dot_circle").addClass('motion_dot')
-        $(".funnel").addClass('motion_funnel')
-        $(".data_1").addClass('motion_data_1')
-        $(".data_2").addClass('motion_data_2')
-        $(".file").addClass('motion_file')
+      if(sc_1 > circle_wrapper_h){
+        $(".circle_p1").addClass('circle_p1_animaiotn')
+        $(".circle_p2").addClass('circle_p2_animaiotn')
+        $(".circle_p3").addClass('circle_p3_animaiotn')
+        $(".circle_p4").addClass('circle_p4_animaiotn')
+
+        $(".c_des_1").addClass('c_des_1_animaiton')
+        $(".c_des_2").addClass('c_des_2_animaiton')
+        $(".c_des_3").addClass('c_des_3_animaiton')
+        $(".c_des_4").addClass('c_des_4_animaiton')
+
       }
       else{
-        $(".thoughts_motion_1 .dot_circle").removeClass('motion_dot')
-        $(".funnel").removeClass('motion_funnel')
-        $(".data_1").removeClass('motion_data_1')
-        $(".data_2").removeClass('motion_data_2')
-        $(".file").removeClass('motion_file')
+        $(".circle_p1").removeClass('circle_p1_animaiotn')
+        $(".circle_p2").removeClass('circle_p2_animaiotn')
+        $(".circle_p3").removeClass('circle_p3_animaiotn')
+        $(".circle_p4").removeClass('circle_p4_animaiotn')
+
+        $(".c_des_1").removeClass('c_des_1_animaiton')
+        $(".c_des_2").removeClass('c_des_2_animaiton')
+        $(".c_des_3").removeClass('c_des_3_animaiton')
+        $(".c_des_4").removeClass('c_des_4_animaiton')
       }
 
+      // $(".redo").click(function(){
+      // 	$(".circle_p1").removeClass('circle_p1_animaiotn')
+      //   $(".circle_p2").removeClass('circle_p2_animaiotn')
+      //   $(".circle_p3").removeClass('circle_p3_animaiotn')
+      //   $(".circle_p4").removeClass('circle_p4_animaiotn')
 
+      //   $(".c_des_1").removeClass('c_des_1_animaiton')
+      //   $(".c_des_2").removeClass('c_des_2_animaiton')
+      //   $(".c_des_3").removeClass('c_des_3_animaiton')
+      //   $(".c_des_4").removeClass('c_des_4_animaiton')
 
+      //  	setInterval(function(){ 
+      //  		$(".circle_p1").addClass('circle_p1_animaiotn')
+      //   	$(".circle_p2").addClass('circle_p2_animaiotn')
+      //   	$(".circle_p3").addClass('circle_p3_animaiotn')
+      //   	$(".circle_p4").addClass('circle_p4_animaiotn')
 
+      //   	$(".c_des_1").addClass('c_des_1_animaiton')
+      //  		$(".c_des_2").addClass('c_des_2_animaiton')
+      //   	$(".c_des_3").addClass('c_des_3_animaiton')
+      //   	$(".c_des_4").addClass('c_des_4_animaiton')
+      //  	 }, 500)
 
+      // })
 
   });
 
 </script>
 
 
+
 <div class="aboutus">
 	<div class="section_main">
 
-		<h3>EXPERTISES</h3>
-		<h2>核心技術</h2>
+		<h3>About Us</h3>
+		<h2>關於我們</h2>
 		<div class="illustration_main">
 			<img src="img/aboutus_01.png" alt="">
 		</div>
@@ -246,7 +275,7 @@
 		</div>
 		<div class="article_contain">
 			<p>於在大數據、資訊爆炸的時代，藍星球團隊不斷精進核心技術，提供智慧化的文本分析、相似文件群集、前後文自動化串聯等中文字的探勘技術，藉以從龐大的資料中找出使用者所關注、需要的文件。藍星球專長將全文資料、非結構性資料、半結構性資料中重要的關鍵字詞自動化標註、將不同作者所撰寫的文本正規化，不但可確保資料格式的一致性、有效的減少資料中的錯誤，還可提升資料的可利用性。</p>
-			<p>以上述技術為基底，打造「透事THOUGHTS雲端服務API（近期上線）」及「蛛思CHOOSE輿情智慧分析平台」兩款產品， 「透事THOUGHTS雲端服務API（近期上線） 」面向中文大數據分析市場，而「蛛思CHOOSE輿情智慧分析平台」則為呼應客戶需求，提供不同於市面產品，具備快速、準確、多元分析、精緻圖表的輿論口碑監測系統。</p>
+			<p>以上述技術為基底，打造「透事THOUGHTS雲端服務API」面向中文大數據分析市場；以及「蛛思CHOOSE輿情智慧分析平台」呼應客戶需求，提供不同於市面產品，具備快速、準確、多元分析、精緻圖表的輿論口碑監測系統。</p>
 			<p>而藍星球的系統建置解決方案，使用者可依多重主題分類瀏覽，也能進行全文檢索、詮釋資料搜尋、或跨資料庫綜合檢索。另有增加/排除檢索條件、檢索歷程紀錄、建立個人文件集、與資料輸出等功能。</p>
 			<p>藍星球希冀結合既有數位人文科技的基礎，融合人本思想於專案執行、顧問服務與產品開發之中，未來藍星球將持續以提供各領域完整資訊系統解決方案為目標，應用技術突破人力不及之處，有系統地處理巨量資料內容，並透過不斷演進的核心技術及工具，視覺化呈現資料間各種關連及脈絡，使典藏資源可被更活化運用。以客戶服務為最高原則，運用我們的技術，打造專業的資訊系統，實踐永續經營的理念，為客戶創造最高價值。</p>
 	</div>
@@ -292,7 +321,7 @@
 
 	</div>
 
-
+		<!-- <div class="redo">重播一次</div> -->
 
 	</div>
 </div>
@@ -308,7 +337,7 @@
 	<div class="our_team">
 
 		<div class="our_team_article">
-			世界大學運動會於8月19日正式揭開序幕，各項賽事如火如荼的進行中， <br>也帶起全民運動討論熱潮。其實華語娛樂圈有許多深藏不露的頂尖運動高手，無論在舞台上或競技場上
+			藍星球資訊由臺灣大學資工系研發團隊領軍，融合年輕的創造力，以及豐富的業界經驗<br>以中文資料分析技術為核心，轉動無限可能
 		</div>
 		<div class="clear"></div>
 
@@ -353,6 +382,7 @@
 
 
 
+
 <div class="footer_wrapper">
 	<footer>
 
@@ -362,7 +392,7 @@
 		<div class="links_right">
 			<div class="links_l">
 				<h6>核⼼技術</h6>
-				<a href="expertises.html#target_go_1">透事THOUGHTS API介紹</a>
+				<a href="expertises.html#target_go_1">透事：中文探勘分析系列技術</a>
 				<a href="expertises.html#target_go_2">中⽂檢索引擎</a>
 				<a href="expertises.html#target_go_3">數位⼈文架構</a>
 			</div>
@@ -371,13 +401,13 @@
 				<a href="our_clients.html#target_1">輿情監測類</a>
 				<a href="our_clients.html#target_2">開放資料類</a>
 				<a href="our_clients.html#target_3">數位典藏類</a>
-				<a href="our_clients.html#target_4">其它</a>
+				<a href="our_clients.html#target_4">更多</a>
 			</div>	
 
 			<div class="links_s">
 				<h6>產品資訊</h6>
-				<a href="product_info.html#product_target_01">透事THOUGHTS</a>
-				<a href="product_info.html#product_target_02">蛛思輿情平台</a>
+				<a href="product_info.html#product_target_01">透事雲端中文探勘API</a>
+				<a href="product_info.html#product_target_02">蛛思輿情智慧分析平台</a>
 				<a href="product_info.html#product_target_03">GOTCHA標案捕手</a>
 			</div>
 		

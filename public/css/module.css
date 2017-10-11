@@ -810,7 +810,8 @@ a {
     color: #FFF; }
   .expertises .section_main p {
     font-size: 25px;
-    color: #17317c; } }
+    color: #17317c;
+    text-align: center; } }
 
 @media (min-width: 891px) {
   .expertises {
@@ -856,7 +857,9 @@ a {
     color: #FFF; }
   .expertises .section_main p {
     font-size: 25px;
-    color: #17317c; } }
+    color: #17317c;
+    width: 50%;
+    text-align: center; } }
 
 .w-wrapper {
   background: #e4f3f5;
@@ -1075,7 +1078,7 @@ a {
     margin-right: 2.5%;
     margin-bottom: 30px; }
   .thoughts section .thoughts_col h6 {
-    font-size: 30px;
+    font-size: 28px;
     color: #231815;
     text-align: center;
     line-height: 1.3; }
@@ -2374,7 +2377,8 @@ a {
     color: #FFF; }
   .products .section_main p {
     font-size: 25px;
-    color: #17317c; } }
+    color: #17317c;
+    text-align: center; } }
 
 @media (min-width: 891px) {
   .products {
@@ -2420,7 +2424,8 @@ a {
     color: #FFF; }
   .products .section_main p {
     font-size: 25px;
-    color: #17317c; } }
+    color: #17317c;
+    text-align: center; } }
 
 @media (min-width: 0) and (max-width: 890px) {
   .products-wrapper {
@@ -2665,7 +2670,8 @@ a {
     color: #FFF; }
   .solution .section_main p {
     font-size: 25px;
-    color: #17317c; } }
+    color: #17317c;
+    text-align: center; } }
 
 @media (min-width: 891px) {
   .solution {
@@ -2710,7 +2716,8 @@ a {
     color: #FFF; }
   .solution .section_main p {
     font-size: 25px;
-    color: #17317c; } }
+    color: #17317c;
+    text-align: center; } }
 
 .solution_wrapper {
   background: #e4f3f5;
@@ -3567,30 +3574,6 @@ a {
     font-weight: 700; }
   .circle_wrapper .circle_bg .c_des_1 p, .circle_wrapper .circle_bg .c_des_2 p, .circle_wrapper .circle_bg .c_des_3 p, .circle_wrapper .circle_bg .c_des_4 p, .circle_wrapper .circle_bg .c_des_5 p {
     font-size: 13px; }
-  .circle_wrapper .circle_bg .c_des_1 {
-    opacity: 1;
-    -webkit-animation: showtext1 2s forwards;
-    animation: showtext1 2s forwards;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s; }
-  .circle_wrapper .circle_bg .c_des_2 {
-    opacity: 0;
-    -webkit-animation: showtext 2s forwards;
-    animation: showtext 2s forwards;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s; }
-  .circle_wrapper .circle_bg .c_des_3 {
-    opacity: 0;
-    -webkit-animation: showtext 2s forwards;
-    animation: showtext 2s forwards;
-    -webkit-animation-delay: 6s;
-    animation-delay: 6s; }
-  .circle_wrapper .circle_bg .c_des_4 {
-    opacity: 0;
-    -webkit-animation: showtext_end 2s forwards;
-    animation: showtext_end 2s forwards;
-    -webkit-animation-delay: 8s;
-    animation-delay: 8s; }
   .circle_wrapper .circle_p1, .circle_wrapper .circle_p2, .circle_wrapper .circle_p3, .circle_wrapper .circle_p4 {
     position: absolute;
     width: 300px;
@@ -3601,7 +3584,8 @@ a {
     box-sizing: border-box;
     border: 5px solid transparent;
     border-top: 5px solid #2da1c9;
-    z-index: 2300; } }
+    z-index: 2300;
+    top: 100px; } }
 
 @media (min-width: 891px) {
   .circle_wrapper {
@@ -3663,30 +3647,6 @@ a {
     font-weight: 700; }
   .circle_wrapper .circle_bg .c_des_1 p, .circle_wrapper .circle_bg .c_des_2 p, .circle_wrapper .circle_bg .c_des_3 p, .circle_wrapper .circle_bg .c_des_4 p, .circle_wrapper .circle_bg .c_des_5 p {
     font-size: 16px; }
-  .circle_wrapper .circle_bg .c_des_1 {
-    opacity: 1;
-    -webkit-animation: showtext1 2s forwards;
-    animation: showtext1 2s forwards;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s; }
-  .circle_wrapper .circle_bg .c_des_2 {
-    opacity: 0;
-    -webkit-animation: showtext 2s forwards;
-    animation: showtext 2s forwards;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s; }
-  .circle_wrapper .circle_bg .c_des_3 {
-    opacity: 0;
-    -webkit-animation: showtext 2s forwards;
-    animation: showtext 2s forwards;
-    -webkit-animation-delay: 6s;
-    animation-delay: 6s; }
-  .circle_wrapper .circle_bg .c_des_4 {
-    opacity: 0;
-    -webkit-animation: showtext_end 2s forwards;
-    animation: showtext_end 2s forwards;
-    -webkit-animation-delay: 8s;
-    animation-delay: 8s; }
   .circle_wrapper .circle_p1, .circle_wrapper .circle_p2, .circle_wrapper .circle_p3, .circle_wrapper .circle_p4 {
     position: absolute;
     width: 500px;
@@ -3697,7 +3657,65 @@ a {
     box-sizing: border-box;
     border: 5px solid transparent;
     border-top: 5px solid #2da1c9;
-    z-index: 2300; } }
+    z-index: 2300;
+    top: 150px; } }
+
+.redo {
+  width: 150px;
+  height: 30px;
+  margin: 0 auto;
+  color: #888;
+  border: 1px solid #c0c0c0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
+.redo:hover {
+  background: #096faf;
+  border: 1px solid #096faf;
+  color: #FFF; }
+
+.c_des_1_animaiton {
+  opacity: 1;
+  -webkit-animation: showtext1 2s forwards;
+  animation: showtext1 2s forwards;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+
+.c_des_2_animaiton {
+  opacity: 0;
+  -webkit-animation: showtext 2s forwards;
+  animation: showtext 2s forwards;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s; }
+
+.c_des_3_animaiton {
+  opacity: 0;
+  -webkit-animation: showtext 2s forwards;
+  animation: showtext 2s forwards;
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s; }
+
+.c_des_4_animaiton {
+  opacity: 0;
+  -webkit-animation: showtext_end 2s forwards;
+  animation: showtext_end 2s forwards;
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s; }
 
 @-webkit-keyframes showtext1 {
   0% {
@@ -3751,31 +3769,27 @@ a {
   100% {
     opacity: 1; } }
 
-.circle_p1 {
-  top: 100px;
+.circle_p1_animaiotn {
   -webkit-animation: loader_1 2s forwards;
   animation: loader_1 2s forwards; }
 
-.circle_p2 {
+.circle_p2_animaiotn {
   -webkit-animation: loader_2 2s forwards;
   animation: loader_2 2s forwards;
   -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-  top: 100px; }
+  animation-delay: 2s; }
 
-.circle_p3 {
+.circle_p3_animaiotn {
   -webkit-animation: loader_3 2s forwards;
   animation: loader_3 2s forwards;
   -webkit-animation-delay: 4s;
-  animation-delay: 4s;
-  top: 100px; }
+  animation-delay: 4s; }
 
-.circle_p4 {
+.circle_p4_animaiotn {
   -webkit-animation: loader_4 2s forwards;
   animation: loader_4 2s forwards;
   -webkit-animation-delay: 6s;
-  animation-delay: 6s;
-  top: 100px; }
+  animation-delay: 6s; }
 
 @-webkit-keyframes loader_1 {
   0% {
@@ -3942,7 +3956,8 @@ a {
     z-index: 2800;
     color: #69c5b2;
     -webkit-animation: date 1s forwards;
-    animation: date 1s forwards; }
+    animation: date 1s forwards;
+    cursor: pointer; }
   .date_1:after {
     content: " ";
     display: block;
@@ -3977,7 +3992,8 @@ a {
     -webkit-animation: date 1s forwards;
     animation: date 1s forwards;
     -webkit-animation-delay: 3s;
-    animation-delay: 3s; }
+    animation-delay: 3s;
+    cursor: pointer; }
   .date_2:after {
     content: " ";
     display: block;
@@ -4012,7 +4028,8 @@ a {
     -webkit-animation: date 1s forwards;
     animation: date 1s forwards;
     -webkit-animation-delay: 5s;
-    animation-delay: 5s; }
+    animation-delay: 5s;
+    cursor: pointer; }
   .date_3:after {
     content: " ";
     display: block;
@@ -4048,7 +4065,8 @@ a {
     -webkit-animation: date 1s forwards;
     animation: date 1s forwards;
     -webkit-animation-delay: 7s;
-    animation-delay: 7s; }
+    animation-delay: 7s;
+    cursor: pointer; }
   .date_4:after {
     content: " ";
     display: block;
