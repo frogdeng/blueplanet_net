@@ -3585,7 +3585,9 @@ a {
     border: 5px solid transparent;
     border-top: 5px solid #2da1c9;
     z-index: 2300;
-    top: 100px; } }
+    top: 100px;
+    left: 50%;
+    margin-left: -150px; } }
 
 @media (min-width: 891px) {
   .circle_wrapper {
@@ -3658,7 +3660,9 @@ a {
     border: 5px solid transparent;
     border-top: 5px solid #2da1c9;
     z-index: 2300;
-    top: 150px; } }
+    top: 150px;
+    left: 50%;
+    margin-left: -250px; } }
 
 .redo {
   width: 150px;
